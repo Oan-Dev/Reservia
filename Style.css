@@ -13,10 +13,20 @@ body {
 
 /* modalité container */
 
+header {
+    width: 100%;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+
+}
 
 .Up_Container {
-    width: 40%;
+    width: 150px;
     background-color: darkgray;
+    margin: 20px;
+    margin-left: 0;
+    padding: 5px;
     display: flex;
     top: 0;
     left: 0;
@@ -27,8 +37,11 @@ body {
     width: 40%;
     background-color: lightgray;
     display: flex;
+    justify-content : flex-end;
     top: 0;
     right: 0;
+    margin-right : 0;
+
 }
 
 .SearchBar {
@@ -40,7 +53,14 @@ body {
 
 }
 
-.Town {
+#Choices {
+    width: 100%;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.Hébergements{
     width:70%;
     background-color:#F2F2F2;
     border-radius: 5px;
@@ -53,32 +73,56 @@ body {
 
 }
 
-.mostSelection {
+#Popular{
     width:30%;
     background-color: #F2F2F2;
     border-radius: 5px;
     display: flex;
+    flex-flow: column;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-.Activity {
+#activity {
     width: 100%;
     background-color: #F2F2F2;
     display: flex;
+    flex-flow: row;
     margin-top: 20px;
     margin-bottom : 20px;
 
 }
 
-.Down_Container {
+#Down_Container {
     width: 100%;
     background-color: #F2F2F2;
     display: flex;
     bottom: 0;
     margin-top: 20px;
-
 }
 
+footer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding : 10px;
+    margin: 120px;
+}
+
+.Pop_Photo {
+    width: 10%;
+    height: auto;
+}
+
+.Catégo_photo {
+    width : 80%;
+    height: auto;
+}
+.Place_Photo {
+    width: 60%;
+    height: auto;
+}
