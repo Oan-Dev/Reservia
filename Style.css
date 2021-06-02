@@ -31,7 +31,7 @@ header {
     display: flex;
     top: 0;
     left: 0;
-
+    border: 1px solid black;
 }
 
 .ancre {
@@ -43,6 +43,8 @@ header {
     top: 0;
     right: 0;
     margin-right : 0;
+    border: 1px solid black;
+
 }
 
 #NavHeb, #NavAct, #NavForm {
@@ -52,6 +54,8 @@ header {
     align-self: space-between;
     flex-direction: row;
     margin: 10px;
+    border: 1px solid black;
+
 }
 
 .SearchBar {
@@ -60,22 +64,24 @@ header {
     padding : 10px;
     margin-top : 20px;
     margin-bottom : 20px;
-
+    border: 1px solid black;
 }
 #Recherche {
-    width :20%;
+    width :30%;
     height : auto;
     padding: 0px;
     margin-top : 10px;
     display : flex;
     flex-direction: row;
     align-self: space-between;
+    border: 1px solid black;
 }
 
 #IconMaps, #BarRecherche, #BoutonRecherche {
     display : flex;
     flex-direction : row;
     align-self: space-between;
+    border: 1px solid black;
 }
 
 .zoneRecherche {
@@ -84,22 +90,28 @@ header {
     display : flex;
     flex-wrap: wrap;
     flex-direction : row;
+    border: 1px solid black;
 }
 
 #Choices {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items : center;
     justify-content : center;
-}
+    border: 1px solid black;
+    padding-top : 20px;
+
+}  
 
 .filter {
-    width : 100%;
+    width : 60%;
     margin: 10px;
     padding : 10px;
     display : flex;
     flex-direction : row;
     align-self: space-around;
+    border: 1px solid black;
 }
 
 
@@ -108,13 +120,11 @@ header {
 /* Boites Gallery Images, pour les hébergements*/
 .Hébergements{
     width:70%;
-    height:auto;
+    height:600px;
     background-color:#F2F2F2;
     border-radius: 5px;
     display: flex;
-    flex-direction : row;
     flex-wrap: wrap;
-    justify-content: space-between;
     left: 0;
     padding : 20px;
     margin-right:60px;
@@ -125,7 +135,7 @@ header {
 
 #Popular{
     width:30%;
-    height:400px;
+    height:300px;
     background-color: lightblack;
     border-radius: 5px;
     display: flex;
@@ -133,7 +143,13 @@ header {
     right: 0;
     margin-left: 20px;
     margin-right: 0px;
+    
+}
 
+#Row_Container4 {
+    padding-top: 20px;
+    background-color: #F2F2F2;
+    height:600px;
 }
 
 #activity {
@@ -141,9 +157,20 @@ header {
     background-color: #F2F2F2;
     display: flex;
     flex-flow: row;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom : 20px;
 
+}
+
+figure {
+    background-color: #ffff;
+    width : 30%;
+    font-size: 60%;
+}
+
+h2 {
+    margin: 10px;
+    padding: 10px;
 }
 
 /* boites Footer*/
@@ -152,6 +179,7 @@ header {
     width: 100%;
     background-color: #F2F2F2;
     display: flex;
+    gap: 2rem;
     bottom: 0;
     margin-top: 20px;
 }
@@ -201,6 +229,7 @@ footer {
 
 ul {
     list-style-type: none;
+   
 }
 
 
