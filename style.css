@@ -29,6 +29,13 @@ html, body {
     text-decoration: none;
 }
 
+.texteGras {
+    font-weight: bold;
+}
+.bordureNone {
+    border : none;
+}
+
 /* Couleurs */
 .colorBleu {
     color: #0065fc;
@@ -76,6 +83,83 @@ html, body {
 .margLogo {
     margin-bottom: 7px;
 }
+/* Header */
+.bordrueSearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+    margin-top : 10px;
+}
+.paddingSearch {
+    padding-left : 20px;
+}
+
+.recherche {
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.iconMapsBack {
+    background-image: url('icons/map-marker-alt-solid.svg');
+    background-repeat: no-repeat;
+    background-image-size: 10%
+}
+
+.iconSize {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.buttonSearch {
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/*Filtres*/
+.margFiltre {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+}
+.margFiltreTitre {
+    margin-right: 20px;
+}
+.filtreTexteIcons {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtreTexteIcons:hover > .filtreTexte {
+    color: #0065FC;
+}
+.filtreTexteIcons:hover > .filtreIcons {
+    color: white;
+    background-color: #0065FC;
+}
+.filtreTexte {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.filtreIcons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+}
 
 /* HEBERGEMENTS*/
 
@@ -83,6 +167,7 @@ html, body {
     flex: 2;
     height: 650px;
     margin-right: 20px;
+    margin-top: 20px;
     border-radius : 10px;
 }
 
@@ -94,7 +179,7 @@ html, body {
 }
 
 .imgHebergements1 {
-    background-image: url ('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
+    background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -103,7 +188,7 @@ html, body {
 }
 
 .imgHebergements2 {
-    background-image: url ('images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg') ;
+    background-image: url('./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg') ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -111,7 +196,7 @@ html, body {
     border-radius: 15px 15px 0 0;
 }
 .imgHebergements3 {
-    background-image: url ('./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg') ;
+    background-image: url('./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg') ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -119,7 +204,7 @@ html, body {
     border-radius: 15px 15px 0 0;
 }
 .imgHebergements4 {
-    background-image: url ('./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg') ;
+    background-image: url('./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg') ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -127,7 +212,7 @@ html, body {
     border-radius: 15px 15px 0 0;
 }
 .imgHebergements5 {
-    background-image: url ('./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') ;
+    background-image: url('./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -135,7 +220,7 @@ html, body {
     border-radius: 15px 15px 0 0;
 }
 .imgHebergements6 {
-    background-image: url ('./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') ;
+    background-image: url('./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') ;
     background-size: cover;
     background-position: center;
     width: 100%;
