@@ -23,6 +23,25 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
+.flexColumnCentre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flexColumnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
 
 
 .decorationNone {
@@ -160,6 +179,18 @@ html, body {
     color: #0065FC;
     background-color: #deebff;
 }
+/*Info Icone*/
+.info {
+    display : flex;
+    align-items: center;
+}
+.parentIcon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
 
 /* HEBERGEMENTS*/
 
@@ -176,6 +207,26 @@ html, body {
     height: 650px;
     margin-left: 20px;
     border-radius : 10px;
+}
+.blocHebergements {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bloc1 {
+    margin-bottom: 10px;
+}
+.bloc2 {
+    margin-top: 10px;
+}
+.cubeHebergements {
+    width: 30%;
+    height: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+}
+.cubeDetailsHebergements {
+    width: 90%;
 }
 
 .imgHebergements1 {
@@ -226,4 +277,47 @@ html, body {
     width: 100%;
     height: 120px;
     border-radius: 15px 15px 0 0;
+}
+/* populaires*/
+.blocPopulaires {
+    padding-left : 20px;
+    padding-right : 20px;
+}
+.blocPopulaires12 {
+    margin-bottom: 22px;
+
+}
+.cubePopulaires {
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+}
+.cubeDetailsPopulaires {
+    width: 60%;
+    padding-left: 5%;
+}
+.imgPopulaires1 {
+    background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') ;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+.imgPopulaires2 {
+    background-image: url('./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg') ;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+.imgPopulaires3 {
+    background-image: url('./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg') ;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
 }
