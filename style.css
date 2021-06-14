@@ -86,7 +86,7 @@ html, body {
 }
 .sizeLien {
     width: 140px;
-    height:99px;
+    height: 99px;
 }
 
 .colorLien2 {
@@ -449,3 +449,55 @@ h4 {
     font-weight: bold;
     font-size : 20px;
 }
+
+/* Responsive by Media Queries */
+
+
+/* media pour smartphone type : Iphone8 */
+
+@media screen and (max-width:740px) {
+
+    body {
+        display: block !important;
+    }
+    nav {
+
+    }
+}
+
+    /*.flexCentre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flexAround {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .flexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flexColumnCentre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flexColumnAround {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .flexColumnBetween {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }*/
