@@ -455,14 +455,39 @@ h4 {
 
 /* media pour smartphone type : Iphone8 */
 
-@media screen and (max-width:740px) {
+@media screen and (max-width: 740px) {
 
-    body {
-        display: block !important;
-    }
-    nav {
+   #sectionHebergements {
+       display: block;
+       width: auto;
+       flex-direction: column-reverse;
+       flex-wrap: wrap;
+       background-color : none;   
+   }
+  
+    
+   #blocHebergements {
+       display: inline-block;
+   }
 
-    }
+   #blocHebergements1, #blocHebergements2 {
+        flex-direction: column;
+        width: 100%;
+   
+   }
+   #blocHebergements1:nth-child, #blocHebergements2:nth-child {
+         width : 100%;
+
+   }
+   .backGris{
+       background-color : none;
+   }
+   #blocPopulaires {
+      
+   }
+   #sectionActivites:nth-child {
+       display: inline-block;
+   }
 }
 
     /*.flexCentre {
