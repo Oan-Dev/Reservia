@@ -456,7 +456,42 @@ h4 {
 /* media pour smartphone type : Iphone8 */
 
 @media screen and (max-width: 740px) {
+    /*Taille Texte*/
+    h1, h2,h3, p {
+        font-size: 1.25rem;
+    }
+    /*nav + logo */
 
+    #navBloc {
+        display: block;
+    }
+    #logoBloc {
+        display: block;
+        width: 100%;
+        top: 0;
+    }
+    #navLiens {
+        display: inline-block;
+        
+    }
+
+    /* Header */
+    header {
+        display: block;
+        margin-top: 200px;
+    }
+    #zoneRecherche {
+        width : 80%;
+        font-size : 80%;
+        justify-content : center;
+        align-items: center;
+        
+    }
+
+    .filtre {
+        display: inline-block;
+    }
+    /* Hebergements*/
    #sectionHebergements {
        display: block;
        width: auto;
@@ -464,8 +499,7 @@ h4 {
        flex-wrap: wrap;
        background-color : none;   
    }
-  
-    
+      
    #blocHebergements {
        display: inline-block;
    }
@@ -480,13 +514,44 @@ h4 {
 
    }
    .backGris{
-       background-color : none;
+       background-color : white;
    }
+   .cubeHebergements{
+       width: 100%;
+   }
+    /* les plus Populaires*/
+
    #blocPopulaires {
-      
+      background-color : #f2f2f2;
    }
-   #sectionActivites:nth-child {
+
+
+   /* les Activités*/
+  
+   
+   .blocActivites{
+       display: block;
+       width: 100%;
+       height: 80%;
+   }
+   .cubeActivites {
+       width: 100%;
+   }
+   .cubeActivites2356 {
        display: inline-block;
+       width: 100%;
+   }
+   /* Footer*/
+   #sectionFooter {
+       display: block;
+       width: 100%;
+       bottom: 0;
+       margin-top: 100px;
+     
+   }
+   .blocfoot {
+       flex-direction: column;
+       padding-top :30px;
    }
 }
 
