@@ -458,25 +458,35 @@ h4 {
 
 @media screen and (max-width: 740px) {
     /*Taille Texte*/
-    h1, h2,h3, p {
+    h1, h2, h3, p {
         font-size: 1.25rem;
     }
     /*nav + logo */
 
     #navBloc {
         display: flex;
-        height: 250px;
+        justify-content: space-around;
+        align-items: center;
+        flex-shrink: 5;
+        height: 70%;
+        width: 100%;
     }
     #logoBloc {
-        display: block;
         width: 100%;
+        font-size: 80%;
         top: 0;
     }
     #navLiens {
         flex-direction: column-reverse;
-        position: relative;
+        flex-wrap: wrap;
+        justify-content :justify;
+        align-items: justify;
         width: 80%;
+        height: 80%;
         padding : 50px;
+    }
+    #hebergementsNav, #activitesNav {
+       flex-direction: row;
     }
     .bordureNav {
         border-top: none;
@@ -512,9 +522,9 @@ h4 {
     }
 
     .filtre {
-        display: inline-block;
+        display: flex;
         align-items : justify;
-        width : 60%;
+        width : 100%;
         height : 30%;
         padding : 10px;
     }
