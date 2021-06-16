@@ -464,7 +464,8 @@ h4 {
     /*nav + logo */
 
     #navBloc {
-        display: block;
+        display: flex;
+        height: 250px;
     }
     #logoBloc {
         display: block;
@@ -472,10 +473,19 @@ h4 {
         top: 0;
     }
     #navLiens {
-        display: inline-block;
-        
+        flex-direction: column-reverse;
+        position: relative;
+        width: 80%;
+        padding : 50px;
     }
-
+    .bordureNav {
+        border-top: none;
+        border-bottom : 2px solid blue;
+    }
+    .bordureNav23 {
+        border-top: none;
+        border-bottom : 2px solid transparent;
+    }
     /* Header */
     header {
         display: block;
@@ -503,11 +513,22 @@ h4 {
 
     .filtre {
         display: inline-block;
-        align-items : center;
-        width : 100%;
+        align-items : justify;
+        width : 60%;
+        height : 30%;
+        padding : 10px;
     }
+    .filtreTexteIcons {
+        margin: 10px;
+    }
+    .filtreIcons {
+        width : 40%;
+        font-size : 60%;
+    }
+
     .filtreTexte {
         width : 80%;
+        font-size : 95%;
     }
     .info {
         display: flex;
