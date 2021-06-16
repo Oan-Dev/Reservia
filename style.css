@@ -493,21 +493,27 @@ h4 {
     }
     /* Hebergements*/
    #sectionHebergements {
+       position: relative;
        display: block;
        width: auto;
-       flex-direction: column-reverse;
-       flex-wrap: wrap;
-       background-color : none;   
+       background-color : none;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
    }
       
    #blocHebergements {
-       display: inline-block;
+       position: relative;
+       display: block;
+       width: 100%;
+       margin: 10px;
+       padding: 10px;
+       order : 2; 
    }
 
    #blocHebergements1, #blocHebergements2 {
         flex-direction: column;
         width: 100%;
-   
    }
    #blocHebergements1:nth-child, #blocHebergements2:nth-child {
          width : 100%;
@@ -523,6 +529,11 @@ h4 {
 
    #blocPopulaires {
       background-color : #f2f2f2;
+      width : 100%;
+      position : relative;
+      align-items: flex-end;
+      order: 1;
+      margin-top : 10px;
    }
 
 
@@ -533,13 +544,19 @@ h4 {
        display: block;
        width: 100%;
        height: 80%;
+       margin-left : 10px;
+       margin-right : 10px;
+       flex-wrap: wrap;
    }
    .cubeActivites {
        width: 100%;
+       margin-top : 10px;
+
    }
    .cubeActivites2356 {
-       display: inline-block;
-       width: 100%;
+       display: block;
+       width: 420%;
+   
    }
    /* Footer*/
    #sectionFooter {
