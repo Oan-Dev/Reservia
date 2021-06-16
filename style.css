@@ -549,19 +549,22 @@ h4 {
        flex-wrap: wrap;
    }
    .cubeActivites {
-       width: 100%;
+       width: 90%;
        margin-top : 10px;
-
+       margin-bottom: 20px;
    }
    .cubeActivites2356 {
        display: block;
-       width: 420%;
+       width: 400%;
    
    }
    /* Footer*/
    #sectionFooter {
        display: block;
        width: 100%;
+       padding-top: 80px;
+       padding-left : 20px;
+       height : 30rem;
        bottom: 0;
        margin-top: 100px;
      
@@ -569,6 +572,12 @@ h4 {
    .blocfoot {
        flex-direction: column;
        padding-top :30px;
+   }
+   .footContainer {
+       width: 25rem;
+
+       background-color-size: cover;
+
    }
 }
 
