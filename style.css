@@ -169,6 +169,7 @@ html, body {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
+    font-weight: bold;
 }
 
 .filtreIcons {
@@ -478,7 +479,19 @@ h4 {
     /* Header */
     header {
         display: block;
+        margin-left: 5px;
         margin-top: 200px;
+    }
+    header h1 {
+        text-align : center;
+        padding : 30px;
+        margin-right: 25px;
+    }
+    header p {
+        font-size: 1rem;
+        margin-bottom : 15px;
+        margin-right: 15px;
+        text-align : center;
     }
     #zoneRecherche {
         width : 80%;
@@ -490,7 +503,23 @@ h4 {
 
     .filtre {
         display: inline-block;
+        align-items : center;
+        width : 100%;
     }
+    .filtreTexte {
+        width : 80%;
+    }
+    .info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .info p {
+        width : 70%;
+        font-size: 90%;
+
+    }
+
     /* Hebergements*/
    #sectionHebergements {
        position: relative;
@@ -500,6 +529,8 @@ h4 {
        display: flex;
        flex-direction: column;
        justify-content: space-around;
+       padding: 20px;
+       
    }
       
    #blocHebergements {
@@ -510,30 +541,41 @@ h4 {
        padding: 10px;
        order : 2; 
    }
+   #blocHebergements p {
+       font-size: 1rem;
+       margin-top: 10px;
+       margin-left : 10px;
+   }
 
    #blocHebergements1, #blocHebergements2 {
         flex-direction: column;
         width: 100%;
    }
-   #blocHebergements1:nth-child, #blocHebergements2:nth-child {
+   .cubeHebergements{
          width : 100%;
-
+         box-shadow: 25px black;
    }
    .backGris{
        background-color : white;
    }
    .cubeHebergements{
        width: 100%;
+       box-shadow: 5px 5px 5px 1px #f2f2f2;
+       margin-bottom: 10px;
    }
     /* les plus Populaires*/
 
    #blocPopulaires {
       background-color : #f2f2f2;
-      width : 100%;
+      width : 90%;
       position : relative;
       align-items: flex-end;
+      justify-content: center;
       order: 1;
       margin-top : 10px;
+      margin-right: 20px;
+      padding: 20px 30px 20px 10px;
+      font-size: 80%;
    }
 
 
