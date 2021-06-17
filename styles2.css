@@ -115,6 +115,107 @@ html, body {
     color: black;
 }
 
+/* Header */
+.bordureSearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+    margin-top : 10px;
+}
+.paddingSearch {
+    padding-left : 20px;
+}
+.rechercheBox {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#recherche {
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.iconMapsBack {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-image-size: 10%
+}
+
+.iconSize {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.buttonSearch {
+    width: 120px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/*Filtres*/
+.margFiltre {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.filtre {
+    display: Block;
+    align-items: center;
+}
+.margFiltreTitre {
+    margin-right: 20px;
+}
+.filtreTexteIcons {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.filtreTexteIcons:hover > .filtreTexte {
+    color: #0065FC;
+}
+.filtreTexteIcons:hover > .filtreIcons {
+    color: white;
+    background-color: #0065FC;
+}
+.filtreTexte {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.filtreIcons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Info Icone*/
+.info {
+    display : flex;
+    align-items: center;
+}
+.parentIcon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
 
 /* La forme des boites container des contenus*/
 .cubeHebergements {
