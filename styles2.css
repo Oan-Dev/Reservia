@@ -256,6 +256,9 @@ header {
 }
 
 /* blocs les Populaires*/
+#populairesBox {
+    height: 900px;
+}
 .blocPopulaires {
     padding-left : 20px;
     padding-right : 20px;
@@ -304,12 +307,14 @@ h2 {
     margin-top: 20px;
 }
 .cubeActivites {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 .cubeActivites2356 {
     width: 100%;
+    margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
@@ -339,10 +344,11 @@ h2 {
 }
   
 /* Format des Boites "Sections" contenant les container de Contenu */
-#productBox, #populairesBox, #hebergementsBox, #activitesBox, #footBox {
+#productBox, #populairesBox, #hebergementsBox, #activitesBox, #footBox, #navBloc {
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px 2px black;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    margin-bottom: 20px;
 }
 #blocActivites {
     
@@ -351,16 +357,18 @@ h2 {
     background-color: darkgray;
     margin-bottom: 50px;
     width: 98%;
-    height:800px;
+    height:900px;
     padding: 20px;
     background-color: darkgray;
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px 2px black;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
 #footBox {
     margin-top : 20px;
 }
 
-
+#navBloc a, #logoBox, header, header div { 
+    border: 1px solid black;
+}
