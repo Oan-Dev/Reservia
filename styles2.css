@@ -274,21 +274,44 @@ header {
     width: 60%;
     padding-left: 5%;
 }
+.flexPopulairesBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexActivitesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
 
 /* Blocs Activités */
 h2 {
     margin-bottom: 20px;
     margin-top:20px;
 }
-#activites {
+#activitesBox {
     margin-top: 50px;
-    margin-bottom: 1000px;
+    margin-bottom: 50px;
     padding-top: 20px;
 }
 #blocActivites {
     width: 100%;
-    height: 600px;
+    padding: 5px;
+    height: auto;
     margin-top: 20px;
+}
+.cubeActivites {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.cubeActivites2356 {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 /*.blocActivites2356 {
     width: 23%;
@@ -299,9 +322,9 @@ h2 {
 
 /* Le footer */
 .footContainer {
-    bottom : 0;
+    bottom: 0;
     background-color: #f2f2f2;
-    margin-top: 480px;
+    margin-top: 50px;
     height: 400px;
     padding: 20px;
   
@@ -315,3 +338,29 @@ h2 {
     margin-top: 20px;
 }
   
+/* Format des Boites "Sections" contenant les container de Contenu */
+#productBox, #populairesBox, #hebergementsBox, #activitesBox, #footBox {
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 2px black;
+}
+#blocActivites {
+    
+}
+#blocA, #blocB {
+    background-color: darkgray;
+    margin-bottom: 50px;
+    width: 98%;
+    height:800px;
+    padding: 20px;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 2px black;
+}
+
+#footBox {
+    margin-top : 20px;
+}
+
+
