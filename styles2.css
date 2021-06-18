@@ -8,9 +8,9 @@ html, body {
 }
 
 
+/* format du contenu */
 
 /*Herbergements*/
-
 #imgHebergements1 {
     background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
 }
@@ -41,7 +41,6 @@ html, body {
 
 
 /* Les plus populaires */
-
 #imgPopulaires1 {
     background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') ;
 }
@@ -60,10 +59,7 @@ html, body {
     border-radius: 15px 0 0 15px;
 }
 
-
-
 /* Les Activités*/
-
 #imgActivites1 {
     background-image: url('./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') ;
 }
@@ -90,6 +86,18 @@ html, body {
     height: 200px;
     border-radius: 15px 15px 0 0;
 }
+.hauteurTitre {
+    height: 70px;
+}
+.titreActivites {
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+    padding-left : 5%;
+    width : 95%;
+}
+
+/* fin format du contenu */
 
 /* Couleurs */
 .colorBleu {
@@ -114,8 +122,20 @@ html, body {
 .colorLien2 {
     color: black;
 }
+/* La navBar + logo */
+
+
+
 
 /* Header */
+header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#texteAccroche  {
+    margin-bottom: 30px;
+    font-size: 80%;
+}
 .bordureSearch {
     width: 400px;
     border-radius: 10px;
@@ -124,6 +144,11 @@ html, body {
 }
 .paddingSearch {
     padding-left : 20px;
+}
+#rechercheBox {
+    display : flex;
+    justify-content : center;
+    align-items : center;
 }
 .rechercheBox {
     display : flex;
@@ -149,7 +174,7 @@ html, body {
     border-radius: 10px 0 0 10px;
 }
 
-.buttonSearch {
+#buttonSearch {
     width: 120px;
     height: 50px;
     color: #fff;
@@ -157,14 +182,11 @@ html, body {
     border-radius: 0 10px 10px 0;
 }
 /*Filtres*/
-.margFiltre {
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.filtre {
+#filtre {
     display: Block;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 .margFiltreTitre {
     margin-right: 20px;
@@ -205,7 +227,7 @@ html, body {
 }
 
 /*Info Icone*/
-.info {
+#info {
     display : flex;
     align-items: center;
 }
@@ -216,16 +238,80 @@ html, body {
     border-radius: 25px;
     margin-right: 5px;
 }
+/* fin Header */
 
-/* La forme des boites container des contenus*/
+/* Format des boites container des contenus*/
+
+/* Bloc les Hebergements*/
 .cubeHebergements {
     width: 90%;
     height: auto;
     background-color: white;
     padding: 1%;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .cubeDetailsHebergements {
     width: 90%;
 }
 
+/* blocs les Populaires*/
+.blocPopulaires {
+    padding-left : 20px;
+    padding-right : 20px;
+}
+.blocPopulaires12 {
+    margin-bottom: 22px;
+
+}
+.cubePopulaires {
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+}
+.cubeDetailsPopulaires {
+    width: 60%;
+    padding-left: 5%;
+}
+
+/* Blocs Activités */
+h2 {
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+#activites {
+    margin-top: 50px;
+    margin-bottom: 1000px;
+    padding-top: 20px;
+}
+#blocActivites {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+/*.blocActivites2356 {
+    width: 23%;
+    height: 600px;
+}
+*/
+/* Fin de Format des Blocs container de Contenu */
+
+/* Le footer */
+.footContainer {
+    bottom : 0;
+    background-color: #f2f2f2;
+    margin-top: 480px;
+    height: 400px;
+    padding: 20px;
+  
+}
+.blocfoot ul {
+    margin-bottom : 20px;
+}
+
+.blocfoot ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+  

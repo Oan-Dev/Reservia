@@ -11,38 +11,38 @@
 </head>
 
 <body>
-    <nav class="sizeNav">
-        <div class="">
-            <div> <img class="margLogo" src="./images/logo/Reservia.svg" alt="Logo Reservia" /></div>
-            <div class="sizeLiens">
-                <div class="sizeLien bordureNav">
-                    <a class="colorBleu decorationNone" href="#">Hébergements</a>
-                </div>
-                <div class="sizeLien">
-                    <a class="colorLien2 decorationNone bordureNav23" href="#">Activités</a>
-                </div>
-                <div class="sizeLien">
-                    <a class="colorBleu decorationNone bordureNav23" href="#">S'inscrire</a>
-                </div>
+    <nav id="navBloc" class="sizeNav">
+        <section id="navLogo">
+            <div id="logoBox">
+                <img class="margLogo" src="./images/logo/Reservia.svg" alt="Logo Reservia" />
             </div>
-        </div>
+            <div id="navHerbergements" class="sizeLien bordureNav">
+                <a class="colorBleu decorationNone" href="#">Hébergements</a>
+            </div>
+            <div id="navActivites" class="sizeLien">
+                <a class="colorLien2 decorationNone bordureNav23" href="#">Activités</a>
+            </div>
+            <div id="navSincrire" class="sizeLien">
+                <a class="colorBleu decorationNone bordureNav23" href="#">S'inscrire</a>
+            </div>
+        </section>
     </nav>
 
     <header>
-        <div>
+        <div id="texteAccroche">
             <h1 class="texteGras">Trouvez votre hébergements pour vos vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div class="bordrueSearch paddingSearch rechercheBox">
-            <div class="iconSize backGris iconMapsBack">
+        <div id="rechercheBox" class="rechercheBox bordrueSearch paddingSearch">
+            <div class="rechercheBox iconSize backGris iconMapsBack">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
             <div>
-                <input id="recherche" class="bordureNone paddingSearch" type="search" value="Marseille, France">
+                <input id="recherche" class="rechercheBox bordureNone paddingSearch" type="search" value="Marseille, France">
             </div>
-            <div class="backBleu">Rechercher</div>
+            <div id="buttonSearch" class="rechercheBox backBleu">Rechercher</div>
         </div>
-        <div class="filtre margFiltre">
+        <div id="filtre" class="margFiltre">
             <div class="margFiltreTitre">
                 <h3>Filtres</h3>
             </div>
@@ -50,7 +50,7 @@
                 <div class="filtreIcons">
                     <i class="fas fa-money-bill-wave fa-lg"></i>
                 </div>
-                <div class="filtreTexte ">Economique</div>
+                <div class="filtreTexte">Economique</div>
             </div>
             <div class="filtreTexteIcons">
                 <div class="filtreIcons">
@@ -71,16 +71,65 @@
                 <div class="filtreTexte">Animaux domestiques</div>
             </div>
         </div>
-        <div class="info">
+        <div id="info">
             <div class="parentIcon">
                 <i class="fas fa-info colorBleu"></i>
             </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-
     </header>
 
     <section class="">
+        <div class="sizePopulaires blocPopulaires backGris">
+            <div class="">
+                <h2 class="texteGras">Les plus populaires</h2>
+                <div><i class="fas fa-chart-line fa-lg"></i></div>
+            </div>
+            <div class="">
+                <div class="cubePopulaires blocPopulaires12">
+                    <div id="imgPopulaires1" class="formatImgPopulaires"></div>
+                    <div class="cubeDetailsPopulaires">
+                        <h3>Hôtel le soleil du matin</h3>
+                        <p>Nuit à partir de 128€</p>
+                        <div>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubePopulaires blocPopulaires12">
+                    <div id="imgPopulaires2" class="formatImgPopulaires"></div>
+                    <div class="cubeDetailsPopulaires">
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <div>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorGris"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cubePopulaires">
+                    <div id="imgPopulaires3" class="formatImgPopulaires"></div>
+                    <div class="cubeDetailsPopulaires">
+                        <h3>Hôtel Tout Bleu et Blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <div>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorBleu"></i>
+                            <i class="fas fa-star colorGris"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="sizeHebergements backGris blocHebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="bloc1">
@@ -174,61 +223,12 @@
             <div></div>
             <p class="texteGras">Afficher plus</p>
         </div>
-        <div class="sizePopulaires blocPopulaires backGris">
-            <div class="">
-                <h2 class="texteGras">Les plus populaires</h2>
-                <div><i class="fas fa-chart-line fa-lg"></i></div>
-            </div>
-            <div class="">
-                <div class="cubePopulaires blocPopulaires12">
-                    <div id="imgPopulaires1" class="formatImgPopulaires"></div>
-                    <div class="cubeDetailsPopulaires">
-                        <h3>Hôtel le soleil du matin</h3>
-                        <p>Nuit à partir de 128€</p>
-                        <div>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="cubePopulaires blocPopulaires12">
-                    <div id="imgPopulaires2" class="formatImgPopulaires"></div>
-                    <div class="cubeDetailsPopulaires">
-                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                        <p>Nuit à partir de 71€</p>
-                        <div>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorGris"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="cubePopulaires">
-                    <div id="imgPopulaires3" class="formatImgPopulaires"></div>
-                    <div class="cubeDetailsPopulaires">
-                        <h3>Hôtel Tout Bleu et Blanc</h3>
-                        <p>Nuit à partir de 68€</p>
-                        <div>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorBleu"></i>
-                            <i class="fas fa-star colorGris"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
-    <section class="activites">
+    <section id="activites">
         <h2>Activités à Marseille</h2>
-        <div class="blocActivites">
+        <div id="blocActivites">
             <div class="cubeActivites">
                 <div id="imgActivites1" class="formatImgActivites"></div>
                 <div class="hauteurTitre titreActivites">
