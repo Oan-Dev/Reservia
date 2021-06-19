@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
-<body>
-    <nav class="sizeNav">
+<body class="bodyBlock">
+    <nav id="navBloc" class="sizeNav">
         <div class="flexBetween">
-            <div> <img class="margLogo" src="./images/logo/Reservia.svg" alt="Logo Reservia" /></div>
-            <div class="sizeLiens flexAround">
-                <div class="sizeLien flexCentre bordureNav">
+            <div id="logoBloc"> <img class="margLogo" src="./images/logo/Reservia.svg" alt="Logo Reservia" /></div>
+            <div id="navLiens" class="sizeLiens flexAround">
+                <div id="hebergementsNav" class="sizeLien flexCentre bordureNav">
                     <a class="colorBleu decorationNone" href="#">Hébergements</a>
                 </div>
-                <div class="sizeLien flexCentre">
+                <div id="activitesNav" class="sizeLien flexCentre">
                     <a class="colorLien2 decorationNone bordureNav23" href="#">Activités</a>
                 </div>
-                <div class="sizeLien flexCentre">
+                <div id="inscriptionNav" class="sizeLien flexCentre">
                     <a class="colorBleu decorationNone bordureNav23" href="#">S'inscrire</a>
                 </div>
             </div>
@@ -34,7 +34,8 @@
             <h1 class="texteGras">Trouvez votre hébergements pour vos vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div class="flexCentre bordureSearch paddingSearch">
+        <div id="zoneRecherche" class="flexCentre bordrueSearch paddingSearch">
+            >>>>>>> responsive
             <div class="iconSize backGris flexCentre iconMapsBack">
                 <i class="fas fa-map-marker-alt flexCentre"></i>
             </div>
@@ -81,10 +82,10 @@
 
     </header>
 
-    <section class="flexAround">
-        <div class="flexColumnAround sizeHebergements backGris blocHebergements">
+    <section id="sectionHebergements" class="flexAround">
+        <div id="blocHebergements" class="flexColumnAround sizeHebergements backGris blocHebergements">
             <h2>Hébergements à Marseille</h2>
-            <div class="bloc1 flexBetween">
+            <div id="blocHebergements1" class="bloc1 flexBetween">
                 <div class="cubeHebergements flexColumnCentre">
                     <div class="imgHebergements1"></div>
                     <div class="cubeDetailsHebergements">
@@ -128,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloc2 flexBetween">
+            <div id="blocHebergements2" class="bloc2 flexBetween">
                 <div class="cubeHebergements flexColumnCentre">
                     <div class="imgHebergements4"></div>
                     <div class="cubeDetailsHebergements">
@@ -175,7 +176,7 @@
             <div></div>
             <p class="texteGras">Afficher plus</p>
         </div>
-        <div class="sizePopulaires blocPopulaires backGris">
+        <div id="blocPopulaires" class="sizePopulaires blocPopulaires backGris">
             <div class="flexBetween">
                 <h2 class="texteGras">Les plus populaires</h2>
                 <div><i class="fas fa-chart-line fa-lg"></i></div>
@@ -227,7 +228,7 @@
         </div>
     </section>
 
-    <section class="activites">
+    <section id="sectionActivites" class="activites">
         <h2>Activités à Marseille</h2>
         <div class="blocActivites flexBetween">
             <div class="cubeActivites flexColumnCentre">
@@ -272,7 +273,7 @@
             </div>
     </section>
 
-    <section class="footContainer">
+    <section id="sectionFooter" class="footContainer">
         <footer class="blocfoot">
             <div class="blocPropos">
                 <div class="titreFoot">
