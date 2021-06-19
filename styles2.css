@@ -257,7 +257,7 @@ header {
 
 /* blocs les Populaires*/
 #populairesBox {
-    height: 900px;
+    height: 700px;
 }
 .blocPopulaires {
     padding-left : 20px;
@@ -277,17 +277,11 @@ header {
     width: 60%;
     padding-left: 5%;
 }
-.flexPopulairesBox {
+
+#populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires, #filtreEcoFamille {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flexActivitesContainer {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-   
+    align-items: center;
 }
 
 /* Blocs Activités */
@@ -372,3 +366,36 @@ h2 {
 #navBloc a, #logoBox, header, header div { 
     border: 1px solid black;
 }
+/* Test faire 1 carré dans 1 container */
+/* Fin
+#navLogo {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    place-content: space-around;
+    align-items: justify;
+    
+}
+#logoBox {
+    order: 1;
+    justify-content: flex-start;
+
+   
+}
+#navHerbergements {
+    order: 2;
+    justify-content: flex-end;
+
+}
+#navSincrire {
+    order: 3;
+    justify-content: start;
+
+}
+#navActivites {
+    order: 4;
+    justify-content: flex-end;
+
+}
+
+/*Fin test*/

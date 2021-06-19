@@ -16,12 +16,14 @@
             <div id="logoBox">
                 <img class="margLogo" src="./images/logo/Reservia.svg" alt="Logo Reservia" />
             </div>
-            <div id="navHerbergements" class="sizeLien bordureNav">
-                <a class="colorBleu decorationNone" href="#">Hébergements</a>
-            </div>
-            <div id="navActivites" class="sizeLien">
-                <a class="colorLien2 decorationNone bordureNav23" href="#">Activités</a>
-            </div>
+            <section id="navHerbergementsActivites">
+                <div id="navHerbergements" class="sizeLien bordureNav">
+                    <a class="colorBleu decorationNone" href="#">Hébergements</a>
+                </div>
+                <div id="navActivites" class="sizeLien">
+                    <a class="colorLien2 decorationNone bordureNav23" href="#">Activités</a>
+                </div>
+            </section>
             <div id="navSincrire" class="sizeLien">
                 <a class="colorBleu decorationNone bordureNav23" href="#">S'inscrire</a>
             </div>
@@ -43,28 +45,30 @@
             <div id="buttonSearch" class="rechercheBox backBleu">Rechercher</div>
         </div>
         <div id="filtre" class="margFiltre">
-            <div class="margFiltreTitre">
+            <div id="titreFiltres" class="margFiltreTitre">
                 <h3>Filtres</h3>
             </div>
-            <div class="filtreTexteIcons">
-                <div class="filtreIcons">
-                    <i class="fas fa-money-bill-wave fa-lg"></i>
+            <section id="filtreEcoFamille">
+                <div id="filtreEco" class="filtreTexteIcons">
+                    <div class="filtreIcons">
+                        <i class="fas fa-money-bill-wave fa-lg"></i>
+                    </div>
+                    <div class="filtreTexte">Economique</div>
                 </div>
-                <div class="filtreTexte">Economique</div>
-            </div>
-            <div class="filtreTexteIcons">
-                <div class="filtreIcons">
-                    <i class="fas fa-child fa-lg"></i>
+                <div id="filtreFamille" class="filtreTexteIcons">
+                    <div class="filtreIcons">
+                        <i class="fas fa-child fa-lg"></i>
+                    </div>
+                    <div class="filtreTexte">Familial</div>
                 </div>
-                <div class="filtreTexte">Familial</div>
-            </div>
-            <div class="filtreTexteIcons">
+            </section>
+            <div id="filtreRomantique" class="filtreTexteIcons">
                 <div class="filtreIcons">
                     <i class="fas fa-heart fa-lg"></i>
                 </div>
                 <div class="filtreTexte">Romantique</div>
             </div>
-            <div class="filtreTexteIcons">
+            <div id="filtreAnimaux" class="filtreTexteIcons">
                 <div class="filtreIcons">
                     <i class="fas fa-dog fa-lg"></i>
                 </div>
@@ -82,12 +86,12 @@
     <section id="productBox">
         <section id="populairesBox" class="backGris">
             <div class="sizePopulaires blocPopulaires backGris">
-                <div class="">
+                <div id="titrePopulaires" class="">
                     <h2 class="texteGras">Les plus populaires</h2>
                     <div><i class="fas fa-chart-line fa-lg"></i></div>
                 </div>
-                <div class="">
-                    <div class="cubePopulaires blocPopulaires12">
+                <div id="GroupePopulairesBox" class="">
+                    <div id="populaires1Box" class="cubePopulaires blocPopulaires12">
                         <div id="imgPopulaires1" class="formatImgPopulaires"></div>
                         <div class="cubeDetailsPopulaires">
                             <h3>Hôtel le soleil du matin</h3>
@@ -101,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cubePopulaires blocPopulaires12">
+                    <div id="populaires2Box" class="cubePopulaires blocPopulaires12">
                         <div id="imgPopulaires2" class="formatImgPopulaires"></div>
                         <div class="cubeDetailsPopulaires">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -115,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cubePopulaires">
+                    <div id="populaires3Box" class="cubePopulaires">
                         <div id="imgPopulaires3" class="formatImgPopulaires"></div>
                         <div class="cubeDetailsPopulaires">
                             <h3>Hôtel Tout Bleu et Blanc</h3>
