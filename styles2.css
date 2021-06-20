@@ -3,14 +3,24 @@
     padding:0;
 }
 /* GENERAL */
+/* Fonts Family, Caractère de Police */
+/* Important de Fonts */
+@font-face { font-family: raleway; src: url('../fonts/raleway/Raleway-regular.ttf')
+
+
+}
+
+/* Fonts dans Body */
 html, body {
     font-family: raleway, Arial, Helvetica, sans-serif;
 }
-
+.texteGras {
+    font-weight: bold;
+}
 
 /* format du contenu */
 
-/*Herbergements*/
+/*Herbergements Contenu & format du contenu */
 #imgHebergements1 {
     background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
 }
@@ -40,7 +50,7 @@ html, body {
 }
 
 
-/* Les plus populaires */
+/* Les plus populaires  Contenu & format du contenu */
 #imgPopulaires1 {
     background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') ;
 }
@@ -59,7 +69,7 @@ html, body {
     border-radius: 15px 0 0 15px;
 }
 
-/* Les Activités*/
+/* Les Activités Contenu & format du contenu */
 #imgActivites1 {
     background-image: url('./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') ;
 }
@@ -128,10 +138,11 @@ html, body {
     padding: 10px;
     margin-top: 20px;
     margin-left:20px;
-    box-shadow: 5px 5px 5px 1px #f2f2f2;
-    border: 1px solid black;
-}
 
+}
+#navLogo a {
+    text-decoration : none;
+}
 
 
 /* Header */
@@ -197,13 +208,13 @@ header {
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
-/*Filtres*/
+/*Filtres et Format des Filtres */
 #filtre {
     display: Block;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 10px;
     padding-right: 20px;
     width: 90%;
     height: 200px;
@@ -219,6 +230,7 @@ header {
     margin-right: 20px;
     display: flex;
     align-items: center;
+    width: 80%;
 }
 .filtreTexteIcons:hover > .filtreTexte {
     color: #0065FC;
@@ -232,6 +244,10 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .filtreIcons {
@@ -245,6 +261,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#iconRecherche {
+    background-image: url ('\1f50d');
+    color: black;
 }
 
 /*Info Icone*/
@@ -264,9 +284,9 @@ header {
 
 /* Format des boites container des contenus*/
 
-/* Bloc les Hebergements*/
+/* Blocs les Hebergements & leurs formats */
 .titrePrincipaux {
-    font-size: 20px;
+    font-size: 22px;
 
 }
 .cubeHebergements {
@@ -287,7 +307,7 @@ header {
     margin: 5px;
 }
 
-/* blocs les Populaires*/
+/* blocs les Populaires & leurs formats */
 #populairesBox {
     height: 700px;
 }
@@ -315,8 +335,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+#titrePopulaires {
+    font-size: 15px;
+}
 
-/* Blocs Activités */
+/* Blocs Activités & leurs formats */
 h2 {
     margin-bottom: 20px;
     margin-top:20px;
@@ -366,15 +389,18 @@ h2 {
 
 .blocfoot ul li {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.titreFoot {
+    margin-bottom : 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
   
-/* Format des Boites "Sections" contenant les container de Contenu */
+/* Format des Boites "Sections" contenant les "container" de Contenu */
 #productBox, #populairesBox, #hebergementsBox, #activitesBox, #footBox, #navBloc {
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px #f2f2f2;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 #titreActivitesBox {
     margin-left : 20px;
@@ -385,8 +411,6 @@ h2 {
     width: 90%;
     height:900px;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
 #footBox {
@@ -395,5 +419,22 @@ h2 {
 /* Flexbox dans les Media Queries */
 
 @media screen and (max-width: 768px) {
+/* Organiser boites de container dans la navBar en carré */
+#navLogo {
+    display: flex;
+    align-items: column;
+    justify-content: space-between;
+    height: 80px;
+}
 
+ #navColonne2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 10px;
+ }
+ #navHerbergements {
+    margin-top: 12px;
+    
+ }
 }
