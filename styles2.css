@@ -419,22 +419,52 @@ h2 {
 /* Flexbox dans les Media Queries */
 
 @media screen and (max-width: 768px) {
-/* Organiser boites de container dans la navBar en carré */
-#navLogo {
+    /* Organiser boites de container dans la navBar en carré */
+    #navLogo {
     display: flex;
     align-items: column;
     justify-content: space-between;
     height: 80px;
-}
+    }
 
- #navColonne2 {
+    #navColonne2 {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     margin-top: 10px;
- }
- #navHerbergements {
+    }
+    #navHerbergements {
     margin-top: 12px;
-    
- }
+    }
+
+     #navActivites{
+     padding-right: 30px;
+    }
+     #navHerbergements {
+     padding-left : 20px;
+    }
+    #navSincrire {
+     padding-left : 30px;
+    }
+    /*Bordure de la NavBar */
+    #navBordure {
+        display: flex;
+        flex-direction: row;
+    }
+    #navBordure1 {
+       width: 50%;
+    }
+    #navBordure2 {
+        width: 50%;
+    }
+    .bordureNav {
+    border-bottom : 3px solid blue;
+    }
+    .bordureNav23 {
+    border-bottom : 3px solid #f2f2f2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 }
