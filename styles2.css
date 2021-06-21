@@ -295,6 +295,7 @@ header {
     font-size: 22px;
 
 }
+
 .cubeHebergements {
     width: 95%;
     height: auto;
@@ -373,7 +374,8 @@ h2 {
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
-/*.blocActivites2356 {
+/*
+.blocActivites2356 {
     width: 23%;
     height: 600px;
 }
@@ -489,6 +491,12 @@ h2 {
         justify-content: space-between;
         align-items: center;
     }
+    /* bloc Hebergement*/
+    #bloc1, #bloc2 {
+        display: flex;
+        flex-direction: column;
+    }
+   
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -503,4 +511,82 @@ h2 {
 @media screen and (min-width: 1600px) {
         /* Comportement des Flexbox pour Desktop */
 
+        /* La NavBar */
+        #navBloc {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #navColonne1, #navColonne2 {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        /* blocs Hebergements & les Populaires Mise */
+        
+        #productBox {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .blocHebergements {
+           
+        }
+
+        #hebergementsBox {
+            flex: 2;
+            order: 1;
+            background-color: #f2f2f2;
+            margin-right: 40px;
+            display: flex;
+            align-items: space-around;
+            width: 55%;
+        }
+        #populairesBox {
+            flex: 1;
+            order: 2;
+            margin-left: 40px;
+            width: 35%;
+        }
+       
+        #bloc1, #bloc2 {
+            display: flex;
+            flex-direction: row;
+            align-items: space-around;
+        }
+       /* bloc Activites avec ses 2 blocs A et B */
+
+       #activitesBox {
+           display: flex;
+           width: 100%;
+       }
+       #blocActivites {
+           display: flex;
+           flex-direction: row;
+       }
+       #blocA {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       #blocB {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .blocActivites2356 {
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #f2f2f2;
+       }
+       .cubeActivites {
+        width: 50%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
 }
