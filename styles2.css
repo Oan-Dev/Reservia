@@ -525,13 +525,39 @@ footer h4 {
         #navBloc {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            width: 100%;
+            order: 2;
+        }
+        #navLogo {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
         }
         #navColonne1, #navColonne2 {
             display: flex;
             flex-direction: row;
-            
+            width: 100%;
         }
+        #navColonne2 {
+            justify-content: space-around;
+            flex-shrink: 10;
+            margin-left: 80px;
+        }
+        #navColonne2 a {
+            margin-right: 80px;
+        }
+        #navColonne1 {
+            justify-content: space-between;
+            flex-grow: 10;
+        }
+        #navHerbergements {
+            border-top: 2px solid #0065FC;
+
+        }
+        #navBordure {
+            order: 1;
+        }
+
         /* Filtres à mettre sur une ligne*/
         #filtre {
             display: flex;
