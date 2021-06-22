@@ -169,10 +169,11 @@ header {
 
 }
 .bordureSearch {
-    width: 400px;
+    width: 320px;
     border-radius: 10px;
     border: 0.5px solid #f2f2f2;
     margin-top : 10px;
+    padding-left: 50px;
 }
 .paddingSearch {
     padding-left : 20px;
@@ -207,7 +208,7 @@ header {
 }
 
 #buttonSearch {
-    width: 120px;
+    width: 60px;
     height: 50px;
     color: #fff;
     cursor: pointer;
@@ -269,7 +270,7 @@ header {
 }
 #iconRecherche {
     background-image: url ('\1f50d');
-    color: black;
+    color: white;
 }
 
 /*Info Icone*/
@@ -564,6 +565,10 @@ footer h4 {
         }
         #navBordure {
             order: 1;
+        }
+        /* Le header */
+        header {
+            margin-left: 20px;
         }
 
         /* Filtres à mettre sur une ligne*/
