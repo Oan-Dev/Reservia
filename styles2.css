@@ -221,7 +221,7 @@ header {
     margin-bottom: 40px;
     margin-left: 10px;
     padding-right: 20px;
-    width: 90%;
+    width: 80%;
     height: 200px;
     
 }
@@ -235,7 +235,7 @@ header {
     margin-right: 20px;
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 50%;
 }
 .filtreTexteIcons:hover > .filtreTexte {
     color: #0065FC;
@@ -494,6 +494,7 @@ footer h4 {
         align-items: center;
         width: 80%;
     }
+    
     /* Comportement Blocs les Populaires */
     #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires, #filtreEcoFamille {
         display: flex;
@@ -531,10 +532,49 @@ footer h4 {
             flex-direction: row;
             
         }
+        /* Filtres à mettre sur une ligne*/
+        #filtre {
+            display: flex;
+            flex-direction: row;
+            height: 90%;
+            width: 100%;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        #filtreEcoFamille, #filtreRomantiqueAnimaux {
+            margin-left: 20px;
+        }
+        #filtreRomantiqueAnimaux {
+            display: flex;
+            flex-direction: row;
+            margin-left: 30px;
+        }
+        #filtreRomantique {
+            width: 40%;
+        }
+        #filtreAnimaux {
+            width: 70%;
+            margin-left: 40px;
+
+        }
+        #filtreEcoFamille {
+            margin-right: 20px;
+        }
+        #filtreEco {
+            width: 50%;
+            margin-right: 20px;
+        }
+        #filtreFamille {
+            width: 200px;
+            margin-left: 40px;
+        }
+        
+
         /* blocs Hebergements & les Populaires Mise */
         
         #productBox {
             width: 100%;
+            margin-left: 20px;
             display: flex;
             flex-direction: row;
         }
@@ -553,7 +593,7 @@ footer h4 {
             border-radius: 15px;
         }
         .cubeHebergements {
-            margin-left : 40px;
+            margin-left : 20px;
         }
         #populairesBox {
             flex: 1;
@@ -576,7 +616,7 @@ footer h4 {
             padding: 20px;
         }
         .titrePrincipaux {
-            margin-left : 70px;
+            margin-left : 45px;
             margin-top: 40px;
         }
         #textePlus {
@@ -592,6 +632,9 @@ footer h4 {
        #blocActivites {
            display: flex;
            flex-direction: row;
+       }
+       #titreActivitesBox {
+           margin-left: 35px;
        }
        #blocA {
         display: flex;
@@ -638,6 +681,7 @@ footer h4 {
            width: 100%;
        }
        footer {
+           margin-left: 20px;
        }
        .blocfoot {
            display: flex;
