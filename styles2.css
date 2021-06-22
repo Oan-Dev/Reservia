@@ -526,6 +526,7 @@ footer h4 {
             display: flex;
             flex-direction: row;
             width: 100%;
+            height: 100px;
             order: 2;
         }
         #navLogo {
@@ -533,18 +534,25 @@ footer h4 {
             display: flex;
             flex-direction: row;
         }
+        .margLogo {
+            width: 110%;
+            margin-top: 20px;
+        }
         #navColonne1, #navColonne2 {
             display: flex;
             flex-direction: row;
             width: 100%;
+            height: 50px;
         }
         #navColonne2 {
             justify-content: space-around;
             flex-shrink: 10;
+            height:100px;
             margin-left: 80px;
+            padding: 50px;
         }
         #navColonne2 a {
-            margin-right: 80px;
+            margin-right: 100px;
         }
         #navColonne1 {
             justify-content: space-between;
@@ -552,7 +560,7 @@ footer h4 {
         }
         #navHerbergements {
             border-top: 2px solid #0065FC;
-
+            padding: 50px;
         }
         #navBordure {
             order: 1;
