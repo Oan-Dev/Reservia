@@ -176,21 +176,29 @@ header {
     padding-left: 50px;
 }
 .paddingSearch {
-    padding-left : 20px;
+    padding-left : 5px;
 }
 #rechercheBox {
     display : flex;
     justify-content : center;
     align-items : center;
+    background-color-size: cover;
+    width: 350px;
+    margin-right: 20px;
 }
+
 .rechercheBox {
     display : flex;
     justify-content : center;
     align-items : center;
+
+}
+#IconMapRecherche {
+    width :120%;
 }
 
 #recherche {
-    width: 230px;
+    width: 180px;
     height: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -198,11 +206,11 @@ header {
 .iconMapsBack {
     background-image: url('');
     background-repeat: no-repeat;
-    background-image-size: 10%
+    background-image-size: cover;
 }
 
 .iconSize {
-    width: 50px;
+    width: 60px;
     height: 50px;
     border-radius: 10px 0 0 10px;
 }
@@ -268,10 +276,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-#iconRecherche {
-    background-image: url ('\1f50d');
-    color: white;
-}
 
 /*Info Icone*/
 #info {
@@ -280,11 +284,12 @@ header {
     margin-left: 20px;
 }
 .parentIcon {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 25px;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
     margin-right: 5px;
+    padding-top: 5px;
     padding-left: 10px;
 }
 /* fin Header */
@@ -339,6 +344,12 @@ header {
 .cubeDetailsPopulaires {
     width: 60%;
     padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cubeDetailsPopulaires h3, .cubeDetailsPopulaires p, .cubeDetailsPopulaires div {
+   margin-bottom: 20px;
 }
 
 #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires, #filtreEcoFamille {
@@ -441,7 +452,7 @@ footer h4 {
     display: flex;
     align-items: column;
     justify-content: space-between;
-    height: 95px;
+    height: 200px;
     }
 
     #navColonne2 {
@@ -449,7 +460,7 @@ footer h4 {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: space-between;
-    margin-top: 10px;
+    padding-top: 10px;
 
     }
     #navHerbergements {
@@ -458,13 +469,19 @@ footer h4 {
     }
 
     #navActivites{
-     padding-right: 30px;
+     padding: 52px;
      margin-top: 20px;
+     margin-bottom: 15px;
+     border-bottom : 3px solid #f2f2f2;
     }
     #navHerbergements {
-     padding-left : 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-bottom : 3px solid blue;
+
     }
     #navSincrire {
+     margin-top: 25px;   
      padding-left : 20px;
     }
     /*Bordure de la NavBar */
@@ -478,12 +495,7 @@ footer h4 {
     #navBordure2 {
         width: 50%;
     }
-    .bordureNav {
-    border-top : 3px solid blue;
-    }
-    .bordureNav23 {
-    border-top : 3px solid #f2f2f2;
-    }
+   
     /* Comportement Filtres */
     .filtreTexte {
         display: flex;
@@ -495,7 +507,12 @@ footer h4 {
         align-items: center;
         width: 80%;
     }
+    #motRecherche {
+        display: none;
+    }
+    #iconRecherche {
     
+    }
     /* Comportement Blocs les Populaires */
     #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires, #filtreEcoFamille {
         display: flex;
@@ -528,12 +545,15 @@ footer h4 {
             flex-direction: row;
             width: 100%;
             height: 100px;
-            order: 2;
+            margin-left: 20px;
         }
         #navLogo {
             width: 100%;
             display: flex;
             flex-direction: row;
+        }
+        #logoBox {
+            margin-right: 20px;
         }
         .margLogo {
             width: 110%;
@@ -551,9 +571,10 @@ footer h4 {
             height:100px;
             margin-left: 80px;
             padding: 50px;
+            
         }
         #navColonne2 a {
-            margin-right: 100px;
+            margin-right: 40px;
         }
         #navColonne1 {
             justify-content: space-between;
@@ -563,8 +584,11 @@ footer h4 {
             border-top: 2px solid #0065FC;
             padding: 50px;
         }
-        #navBordure {
-            order: 1;
+        #navSincrire {
+            margin-left: 60px;
+        }
+        #navActivites {
+            margin-right: 60px;
         }
         /* Le header */
         header {
@@ -577,7 +601,7 @@ footer h4 {
             flex-direction: row;
             height: 90%;
             width: 100%;
-            margin-left: 10px;
+            margin-left: 30px;
             padding-left: 10px;
         }
         #filtreEcoFamille, #filtreRomantiqueAnimaux {
@@ -607,6 +631,15 @@ footer h4 {
             width: 200px;
             margin-left: 40px;
         }
+        #iconRecherche {
+            display: none;
+        }
+        #buttonSearch {
+            width: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
         
 
         /* blocs Hebergements & les Populaires Mise */
@@ -726,7 +759,7 @@ footer h4 {
            display: flex;
            flex-direction: row;
            justify-content: space-between;
-           width: 1400px;
+           width: 1150px;
            padding-top:30px;
        }
 
