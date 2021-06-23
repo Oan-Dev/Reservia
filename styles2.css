@@ -536,111 +536,105 @@ footer h4 {
 
         /*navBar en mode carré*/
         #navLogo {
-            display: flex;
-            align-items: column;
-            justify-content: space-between;
-            height: 200px;
-            }
+        display: flex;
+        align-items: column;
+        justify-content: space-between;
+        height: 200px;
+        }
         
-            #navColonne2 {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: space-between;
-            align-items: space-between;
-            padding-top: 10px;
+        #navColonne2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: space-between;
+        padding-top: 10px;
+        }
+        #navHerbergements {
+        margin-top: 12px;
+        padding-top: 15px;
+        }
         
-            }
-            #navHerbergements {
-            margin-top: 12px;
-            padding-top: 15px;
-            }
-        
-            #navActivites{
-             padding: 52px;
-             margin-top: 20px;
-             margin-bottom: 15px;
-             border-bottom : 3px solid #f2f2f2;
-            }
-            #navHerbergements {
-            padding: 50px;
-            margin-bottom: 20px;
-            border-bottom : 3px solid blue;
-        
-            }
-            #navSincrire {
-             margin-top: 25px;   
-             padding-left : 20px;
-            }
-            /*Bordure de la NavBar */
-            #navBordure {
-                display: flex;
-                flex-direction: row;
-            }
-            #navBordure1 {
-               width: 50%;
-            }
-            #navBordure2 {
-                width: 50%;
-            }
-             /* Le header */
-             header {
-            margin-left: 20px;
-            }
+        #navActivites{
+        padding: 52px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        border-bottom : 3px solid #f2f2f2;
+        }
+        #navHerbergements {
+        padding: 50px;
+        margin-bottom: 20px;
+        border-bottom : 3px solid blue;
+        }
+        #navSincrire {
+        margin-top: 25px;   
+        padding-left : 20px;
+        }
+        /*Bordure de la NavBar */
+        #navBordure {
+        display: flex;
+        flex-direction: row;
+        }
+        #navBordure1 {
+        width: 50%;
+        }
+        #navBordure2 {
+        width: 50%;
+        }
+        /* Le header */
+        header {
+        margin-left: 20px;
+        }
 
-            /* Filtres à mettre sur une ligne*/
-            #filtre {
-                display: flex;
-                flex-direction: row;
-                height: 90%;
-                width: 100%;
-                margin-left: 30px;
-                padding-left: 10px;
-            }
-            #filtreEcoFamille, #filtreRomantiqueAnimaux {
-                margin-left: 20px;
-            }
-            #filtreRomantiqueAnimaux {
-                display: flex;
-                flex-direction: row;
-                margin-left: 30px;
-            }
-            #filtreRomantique {
-                width: 40%;
-            }
-            #filtreAnimaux {
-                width: 70%;
-                margin-left: 40px;
-
-            }
-            #filtreEcoFamille {
-                margin-right: 20px;
-            }
-            #filtreEco {
-                width: 50%;
-                margin-right: 20px;
-            }
-            #filtreFamille {
-                width: 200px;
-                margin-left: 40px;
-            }
-            #iconRecherche {
-                display: none;
-            }
-            #buttonSearch {
-                width: auto;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-
-        
-
-     /*bloc Hebergements & les Populaires.*/
-    #productBox {
+        /* Filtres à mettre sur une ligne*/
+        #filtre {
+        display: flex;
+        flex-direction: row;
+        height: 90%;
+        width: 100%;
+        margin-left: 30px;
+        padding-left: 10px;
+        }
+        #filtreEcoFamille, #filtreRomantiqueAnimaux {
+        margin-left: 20px;
+        }
+        #filtreRomantiqueAnimaux {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        }
+        #filtreRomantique {
+        width: 40%;
+        }
+        #filtreAnimaux {
+        width: 70%;
+        margin-left: 40px;
+        }
+        #filtreEcoFamille {
+        margin-right: 20px;
+        }
+        #filtreEco {
+        width: 50%;
+        margin-right: 20px;
+        }
+        #filtreFamille {
+        width: 200px;
+        margin-left: 40px;
+        }
+        #iconRecherche {
+        display: none;
+        }
+        #buttonSearch {
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+        /*bloc Hebergements & les Populaires.*/
+        #productBox {
         display: flex;
         flex-direction: column;
-    }
-    /* Les hebergements */
-    #hebergementsBox {
+        }
+        /* Les hebergements */
+        #hebergementsBox {
         flex: 2;
         order: 2;
         background-color: #f2f2f2;
@@ -650,69 +644,139 @@ footer h4 {
         width: 98%;
         border-radius: 15px;
         margin-left: 40px;
-    }
+        }
 
-    .cubeHebergements {
-        margin-left : 20px;
-        justify-content: space-around;
-    }
+        .cubeHebergements {
+            margin-left : 20px;
+            justify-content: space-around;
+        }
 
-    .blocHebergements {
-        width: 1200px;
-        height: 800px;
-    }
+        .blocHebergements {
+            width: 1200px;
+            height: 800px;
+        }
 
-    /*les Populaires */
-    #populairesBox {
-        flex: 1;
-        order: 2;
-        margin-left: 40px;
-        width: 98%;
-        border-radius: 15px;
-        flex-direction: row;
-    }
-             
-    #GroupePopulairesBox {
-        width: 100%;
-        height: 200px;
+        /*les Populaires */
+        #populairesBox {
+            flex: 1;
+            order: 2;
+            margin-left: 40px;
+            width: 98%;
+            border-radius: 15px;
+            flex-direction: row;
+        }
+                
+        #GroupePopulairesBox {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires{
+            width: 350px;
+            height: 180px;
+            height: 80%;
+        }
+        #populaires3Box {
+            margin-bottom: 20px;
+        }
+        #titrePopulaires {
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .cubePopulaires {
+            width: 300px;
+        }
+
+        #bloc1, #bloc2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .titrePrincipaux {
+            margin-left : 45px;
+            margin-top: 40px;
+        }
+        #textePlus {
+            margin-left : 60px;
+        }
+
+        /* bloc Activites avec ses 2 blocs A et B */
+
+        #activitesBox {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-bottom: 50px;
-    }
-    #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires{
-        width: 350px;
-        height: 180px;
-        height: 80%;
-    }
-    #populaires3Box {
-        margin-bottom: 20px;
-    }
-    #titrePopulaires {
-        justify-content: space-between;
         width: 100%;
-        margin-bottom: 50px;
-    }
-    .cubePopulaires {
-        width: 300px;
-    }
+        }
+        #blocActivites {
+            display: flex;
+            flex-direction: row;
+        }
+        #titreActivitesBox {
+            margin-left: 35px;
+        }
+        #blocA {
+         display: flex;
+         justify-content: space-between;
 
-    #bloc1, #bloc2 {
+
+         align-items: center;
+         height: auto;
+         margin: auto;
+         padding: 10px;
+        }
+        #blocB {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: auto;
+         margin: auto;
+         padding: 10px;
+        }
+        .blocActivites2356 {
+         width: 50%;
+         height :90%;
+         border-radius: 15px;
+         margin: 20px;
+        }
+        .cubeActivites {
+         width: 50%;
+         border-radius: 15px;
+         box-shadow: 5px 5px 5px 1px #f2f2f2;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 20px;
+        }
+        #imgActivites1, #imgActivites4 {
+            height: 480px;
+        }
+               /* footer, chaque compartiment aligné */
+       .footContainer {
+        height: 250px;
+         }
+         #footBox {
+        display: flex;
+        width: 100%;
+        }
+        footer {
+        margin-left: 20px;
+        }
+        .blocfoot {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px;
-    }
-    .titrePrincipaux {
-        margin-left : 45px;
-        margin-top: 40px;
-    }
-    #textePlus {
-        margin-left : 60px;
-    }
+        width: 1150px;
+        padding-top:30px;
+        }
 
-
-
+        footer ul {
+        margin-top: 30px;
+        }
 
 }
 
