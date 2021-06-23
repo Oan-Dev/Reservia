@@ -183,8 +183,9 @@ header {
     justify-content : center;
     align-items : center;
     background-color-size: cover;
-    width: 350px;
+    width: 250px;
     margin-right: 20px;
+    margin-left : 50px;
 }
 
 .rechercheBox {
@@ -192,9 +193,10 @@ header {
     justify-content : center;
     align-items : center;
 
+
 }
 #IconMapRecherche {
-    width :120%;
+    width :80%;
 }
 
 #recherche {
@@ -210,13 +212,13 @@ header {
 }
 
 .iconSize {
-    width: 60px;
+    width: 80px;
     height: 50px;
     border-radius: 10px 0 0 10px;
 }
 
 #buttonSearch {
-    width: 60px;
+    width: 200px;
     height: 50px;
     color: #fff;
     cursor: pointer;
@@ -448,6 +450,8 @@ footer h4 {
 
 @media screen and (max-width: 768px) {
     /* Organiser boites de container dans la navBar en carré */
+   
+    /*navBar en mode carré*/
     #navLogo {
     display: flex;
     align-items: column;
@@ -527,15 +531,191 @@ footer h4 {
    
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1600px) {
     /* Comportement des Flexbox pour tablette */
 
+        /*navBar en mode carré*/
+        #navLogo {
+            display: flex;
+            align-items: column;
+            justify-content: space-between;
+            height: 200px;
+            }
+        
+            #navColonne2 {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: space-between;
+            padding-top: 10px;
+        
+            }
+            #navHerbergements {
+            margin-top: 12px;
+            padding-top: 15px;
+            }
+        
+            #navActivites{
+             padding: 52px;
+             margin-top: 20px;
+             margin-bottom: 15px;
+             border-bottom : 3px solid #f2f2f2;
+            }
+            #navHerbergements {
+            padding: 50px;
+            margin-bottom: 20px;
+            border-bottom : 3px solid blue;
+        
+            }
+            #navSincrire {
+             margin-top: 25px;   
+             padding-left : 20px;
+            }
+            /*Bordure de la NavBar */
+            #navBordure {
+                display: flex;
+                flex-direction: row;
+            }
+            #navBordure1 {
+               width: 50%;
+            }
+            #navBordure2 {
+                width: 50%;
+            }
+             /* Le header */
+             header {
+            margin-left: 20px;
+            }
+
+            /* Filtres à mettre sur une ligne*/
+            #filtre {
+                display: flex;
+                flex-direction: row;
+                height: 90%;
+                width: 100%;
+                margin-left: 30px;
+                padding-left: 10px;
+            }
+            #filtreEcoFamille, #filtreRomantiqueAnimaux {
+                margin-left: 20px;
+            }
+            #filtreRomantiqueAnimaux {
+                display: flex;
+                flex-direction: row;
+                margin-left: 30px;
+            }
+            #filtreRomantique {
+                width: 40%;
+            }
+            #filtreAnimaux {
+                width: 70%;
+                margin-left: 40px;
+
+            }
+            #filtreEcoFamille {
+                margin-right: 20px;
+            }
+            #filtreEco {
+                width: 50%;
+                margin-right: 20px;
+            }
+            #filtreFamille {
+                width: 200px;
+                margin-left: 40px;
+            }
+            #iconRecherche {
+                display: none;
+            }
+            #buttonSearch {
+                width: auto;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+        
+
+     /*bloc Hebergements & les Populaires.*/
+    #productBox {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Les hebergements */
+    #hebergementsBox {
+        flex: 2;
+        order: 2;
+        background-color: #f2f2f2;
+        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        border-radius: 15px;
+        margin-left: 40px;
+    }
+
+    .cubeHebergements {
+        margin-left : 20px;
+        justify-content: space-around;
+    }
+
+    .blocHebergements {
+        width: 1200px;
+        height: 800px;
+    }
+
+    /*les Populaires */
+    #populairesBox {
+        flex: 1;
+        order: 2;
+        margin-left: 40px;
+        width: 98%;
+        border-radius: 15px;
+        flex-direction: row;
+    }
+             
+    #GroupePopulairesBox {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires{
+        width: 350px;
+        height: 180px;
+        height: 80%;
+    }
+    #populaires3Box {
+        margin-bottom: 20px;
+    }
+    #titrePopulaires {
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .cubePopulaires {
+        width: 300px;
+    }
+
+    #bloc1, #bloc2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .titrePrincipaux {
+        margin-left : 45px;
+        margin-top: 40px;
+    }
+    #textePlus {
+        margin-left : 60px;
+    }
+
+
+
+
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1600px) {
-    /* Comportement des Flexbox pour Grande tablette */
-
-}
 @media screen and (min-width: 1600px) {
         /* Comportement des Flexbox pour Desktop */
 
