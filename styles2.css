@@ -168,62 +168,13 @@ header {
     font-size: 22px;
 
 }
-.bordureSearch {
-    width: 320px;
-    border-radius: 10px;
-    border: 0.5px solid #f2f2f2;
-    margin-top : 10px;
-    padding-left: 50px;
-}
-.paddingSearch {
-    padding-left : 5px;
-}
-#rechercheBox {
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    background-color-size: cover;
-    width: 250px;
-    margin-right: 20px;
-    margin-left : 50px;
-}
-
-.rechercheBox {
-    display : flex;
-    justify-content : center;
-    align-items : center;
 
 
-}
-#IconMapRecherche {
-    width :80%;
-}
 
-#recherche {
-    width: 180px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: bold;
-}
-.iconMapsBack {
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-image-size: cover;
-}
 
-.iconSize {
-    width: 80px;
-    height: 50px;
-    border-radius: 10px 0 0 10px;
-}
 
-#buttonSearch {
-    width: 200px;
-    height: 50px;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 0 10px 10px 0;
-}
+
+
 /*Filtres et Format des Filtres */
 #filtre {
     display: Block;
