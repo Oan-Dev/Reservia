@@ -294,6 +294,57 @@ header {
     padding-top: 5px;
     padding-left: 10px;
 }
+/* Nouvelle Version Bouton de recherche */
+#searchBloc {
+    display : flex;
+    flex-direction: row;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+}
+#searchBox {
+    display : flex;
+    flex-direction : row;
+    justify-content: flex-start;
+    width: 90%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:10px;
+    margin-right: 20px;
+}
+
+#MapIconSearch {
+    width: 80px;
+    height: 50px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+#buttonSearch {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -20px;
+
+}
+#zoneRecherche {
+    width : 100%;
+    height: 50px;
+    border: .5px solid #f2f2f2;
+    font-weight: bold;
+    font-size: 18px;
+    background-color-size: cover;
+
+}
+
+
 /* fin Header */
 
 /* Format des boites container des contenus*/
@@ -540,6 +591,7 @@ footer h4 {
         align-items: column;
         justify-content: space-between;
         height: 200px;
+        margin-left: 50px;
         }
         
         #navColonne2 {
@@ -548,10 +600,12 @@ footer h4 {
         justify-content: space-between;
         align-items: space-between;
         padding-top: 10px;
+        margin-left: 150px;
         }
         #navHerbergements {
         margin-top: 12px;
         padding-top: 15px;
+        margin-left: 350px;
         }
         
         #navActivites{
@@ -559,6 +613,7 @@ footer h4 {
         margin-top: 20px;
         margin-bottom: 15px;
         border-bottom : 3px solid #f2f2f2;
+        padding-right: 80px;
         }
         #navHerbergements {
         padding: 50px;
@@ -567,7 +622,8 @@ footer h4 {
         }
         #navSincrire {
         margin-top: 25px;   
-        padding-left : 20px;
+        padding-left : 150px;
+        margin-left: 150px;
         }
         /*Bordure de la NavBar */
         #navBordure {
@@ -895,7 +951,7 @@ footer h4 {
             flex-direction: row;
         }
         .blocHebergements {
-            width: 1100px;
+            width: 1250px;
         }
   
         #hebergementsBox {
@@ -920,6 +976,10 @@ footer h4 {
             padding-right: 10px;
             padding-top: 20px;
             border-radius: 15px;
+        }
+        .blocPopulaires {
+            width:80%;
+            margin-left: 20px;
         }
         #GroupePopulairesBox {
             width: 80%;
