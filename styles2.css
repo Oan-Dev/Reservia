@@ -5,14 +5,11 @@
 /* GENERAL */
 /* Fonts Family, Caractère de Police */
 /* Important de Fonts */
-@font-face { font-family: raleway; src: url('../fonts/Raleway-regular.ttf')
 
-
-}
 
 /* Fonts dans Body */
 html, body {
-    font-family: raleway, Arial, Helvetica, sans-serif;
+    font-family: raleway, 'Tangerine', Arial, Helvetica, sans-serif;
 }
 .texteGras {
     font-weight: bold;
@@ -169,12 +166,6 @@ header {
 
 }
 
-
-
-
-
-
-
 /*Filtres et Format des Filtres */
 #filtre {
     display: Block;
@@ -294,8 +285,6 @@ header {
     background-color-size: cover;
 
 }
-
-
 /* fin Header */
 
 /* Format des boites container des contenus*/
@@ -532,8 +521,85 @@ footer h4 {
     }
    
 }
+@media screen and (min-width: 768px) and (max-width: 1240px){
+    /* Comportement des Flexbox pour petite tablette */
+    
+         /*navBar en mode carré*/
+         #navLogo {
+            display: flex;
+            align-items: column;
+            justify-content: space-between;
+            height: 200px;
+            margin-left: 50px;
+            }
+            
+            #navColonne2 {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: space-between;
+            padding-top: 10px;
+            margin-left: 150px;
+            }
+            #navHerbergements {
+            margin-top: 12px;
+            padding-top: 15px;
+            margin-left: 300px;
+            }
+            
+            #navActivites{
+            padding: 52px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-bottom : 3px solid #f2f2f2;
+            padding-right: 80px;
+            }
+            #navHerbergements {
+            padding: 50px;
+            margin-bottom: 20px;
+            border-bottom : 3px solid blue;
+            }
+            #navSincrire {
+            margin-top: 25px;   
+            padding-left : 150px;
+            margin-left: 150px;
+            }
+            /*Bordure de la NavBar */
+            #navBordure {
+            display: flex;
+            flex-direction: row;
+            }
+            #navBordure1 {
+            width: 50%;
+            }
+            #navBordure2 {
+            width: 50%;
+            }
+            /* Le header */
+            header {
+            margin-left: 20px;
+            }   
+    
+    
+        /* header */
+            #filtre {
+            display: Block;
+            }
+            #iconRecherche {
+            display: none;
+            }
+             #buttonSearch {
+             width: auto;
+             padding-left: 5px;
+             padding-right: 5px;
+            }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+
+
+
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1600px) {
     /* Comportement des Flexbox pour tablette */
 
         /*navBar en mode carré*/
@@ -627,6 +693,7 @@ footer h4 {
         width: 200px;
         margin-left: 40px;
         }
+        /* Zone de Recherche */
         #iconRecherche {
         display: none;
         }
