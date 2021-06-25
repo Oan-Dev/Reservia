@@ -9,6 +9,7 @@
         font-family: "raleway";
         src: url("./fonts/raleway/Raleway-Light.ttf") format("ttf");
         src: url("./fonts/raleway/Raleway-Bold.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-ExtraBold.ttf") format("ttf");
         src: url("./fonts/raleway/Raleway-Regular.ttf") format("ttf");
     }
 
@@ -246,6 +247,7 @@ header {
 #searchBloc {
     display : flex;
     flex-direction: row;
+    align-items: center;
     width: 400px;
     height: 50px;
     margin-top: 20px;
@@ -410,7 +412,7 @@ h2 {
 }
 footer h4 {
     font-weight : bold;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom : 30px;
 }
 
@@ -419,11 +421,7 @@ footer h4 {
     margin-top: 10px;
     margin-bottom : 20px;
 }
-.titreFoot {
-    margin-bottom : 20px;
-    font-weight: bold;
-    font-size: 18px;
-}
+
  /* Fin de Format des Blocs container de Contenu */
  /* Format des Boites "Sections" contenant les "container" de Contenu */
 #productBox, #populairesBox, #hebergementsBox, #activitesBox, #footBox, #navBloc {
@@ -444,6 +442,7 @@ footer h4 {
 #footBox {
     margin-top : 20px;
 }
+
 /* Flexbox dans les Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -1244,11 +1243,12 @@ footer h4 {
            display: flex;
            flex-direction: row;
            justify-content: space-between;
-           width: 1150px;
+           width: 1600px;
            padding-top:30px;
         }
 
         footer ul {
            margin-top: 30px;
         } 
+        
 }
