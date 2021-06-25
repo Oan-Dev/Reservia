@@ -290,7 +290,6 @@ header {
     border: .5px solid #f2f2f2;
     font-weight: bold;
     font-size: 18px;
-    background-color-size: cover;
 
 }
 /* fin Header */
@@ -451,39 +450,46 @@ footer h4 {
     /*navBar en mode carré*/
     #navLogo {
     display: flex;
-    align-items: column;
     justify-content: space-between;
-    height: 200px;
+    max-width: 667px;
+    height: 150px;
+    font-size: 70%;
     }
 
     #navColonne2 {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: space-between;
-    padding-top: 10px;
-
-    }
-    #navHerbergements {
-    margin-top: 12px;
-    padding-top: 15px;
+    width: auto;
+    margin-right: 100px;
+    margin-top: 150px;
+    padding-top: 18px;
     }
 
     #navActivites{
-     padding: 52px;
-     margin-top: 20px;
-     margin-bottom: 15px;
-     border-bottom : 3px solid #f2f2f2;
+    font-size: 15px;
+    padding-bottom: 50px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    border-bottom : 3px solid #f2f2f2;
+    width: auto;
     }
     #navHerbergements {
-    padding: 50px;
+    margin-top: 20px;   
+    margin-right: 20px;
+    padding: 20px;
     margin-bottom: 20px;
     border-bottom : 3px solid blue;
-
+    height: 50px;
+    font-size: 15px;
+    
     }
     #navSincrire {
-     margin-top: 25px;   
-     padding-left : 20px;
+     margin-top: 80px;
+     margin-right: 120px; 
+     padding-bottom: 25px; 
+     font-size: 15px;
+     width: auto;
     }
     /*Bordure de la NavBar */
     #navBordure {
@@ -534,7 +540,6 @@ footer h4 {
          /*navBar en mode carré*/
          #navLogo {
             display: flex;
-            align-items: column;
             justify-content: space-between;
             height: 200px;
             margin-left: 50px;
@@ -549,7 +554,6 @@ footer h4 {
             display: flex;
             flex-direction: column-reverse;
             justify-content: space-between;
-            align-items: space-between;
             padding-top: 10px;
             margin-left: 50px;
             }
@@ -763,7 +767,6 @@ footer h4 {
         /*navBar en mode carré*/
         #navLogo {
         display: flex;
-        align-items: column;
         justify-content: space-between;
         height: 200px;
         margin-left: 50px;
@@ -778,7 +781,6 @@ footer h4 {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        align-items: space-between;
         padding-top: 10px;
         margin-left: 150px;
         }
