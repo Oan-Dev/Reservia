@@ -5,11 +5,16 @@
 /* GENERAL */
 /* Fonts Family, Caractère de Police */
 /* Important de Fonts */
-
+    @font-face {
+        font-family: "raleway";
+        src: url("./fonts/raleway/Raleway-Light.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-Bold.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-Regular.ttf") format("ttf");
+    }
 
 /* Fonts dans Body */
 html, body {
-    font-family: raleway, 'Tangerine', Arial, Helvetica, sans-serif;
+    font-family: raleway, 'Tangerine', Arial, 'Times New Roman', Helvetica, sans-serif;
 }
 .texteGras {
     font-weight: bold;
