@@ -136,7 +136,9 @@ html, body {
     color: black;
 }
 /* Nouveau Format navBar */
-
+#navContainer {
+    height: 300px;
+}
 
 /* La navBar + logo */
 #navLogo {
