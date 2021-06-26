@@ -1108,24 +1108,24 @@ footer h4 {
         }
         #barBox {
             width: 100%;
-            background-color: black;
             justify-content: flex-end;
         }
         #navBoite1, #navBoite2 {
             flex-direction: row;
-            background-color: darkgrey;
             height: 80%;
+            width: 1240px;
 
         }
         #navBoite1 {
-           width: auto;
+           min-width: 1500px;
+           justify-content: space-between;
         }
         #navBoite2 {
-            width: 400px;
+            width: 600px;
             justify-content: flex-end;
         }
         #demarcation1, #demarcation2 {
-            background-color: blueviolet;
+            background-color: none;
         }
         
         #navColumn1, #navColumn2 {
@@ -1134,12 +1134,39 @@ footer h4 {
         }
         #navColumn1 {
             justify-content: space-between;
-            background-color: darkorange;
-            width: inherit;
+            align-items: flex-start;
+            width: 1500px;
+            height: 60%;
         }
         #navColumn2 {
-            background-color: lightgreen;
             align-items: center;
+            width: 800px;
+            margin-top: 30px;
+            justify-content: space-around;
+        }
+        #navHebGapBox {
+            width: 1000px;
+        }
+        #logoGapBox {
+            width: 200px;
+        }
+        #navActivitesBox {
+            margin-top: 20px;
+        }
+        #LienHeb {
+            border-top: 2px solid blue;
+            padding: 40px;
+            height: 100px;
+            width: 150px;
+            text-align: center;
+        }
+        #navHerbergementsBox {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+
+        }
+        #logoBox {
+            margin-top: 40px;
         }
 
         /* La NavBar */
