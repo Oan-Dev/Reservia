@@ -211,7 +211,7 @@ a {
     height: 25px;
     border-bottom: 2px solid #0065fc;
 }
-#navSincrireBox
+
 /* La navBar + logo */
 #navLogo {
     width: 80%;
@@ -841,6 +841,98 @@ footer h4 {
 
 @media screen and (min-width: 1240px) and (max-width: 1600px) {
     /* Comportement des Flexbox pour tablette */
+        /* Nouvelle navBar */
+        #navContainer {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            min-width:1240px;
+            width: 100%;
+            background-color: black;
+        }
+        #barBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            background-color: darkgrey;
+            min-width:1240px;
+            max-width: 100%;
+            align-items: center;
+
+        }
+        #navColumn1 { 
+             height: 150px;
+             justify-content: flex-start;
+             padding-top: 30px;
+             width: 50%;
+        }
+        #navColumn2  {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column-reverse;
+            height: 150px;
+            width: 50%;
+        }
+        #navBoite1, #navBoite2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            min-width: 1240px;
+            max-width: 1599px;
+        }
+        
+        #navSincrireBox, #navHerbergementsBox {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #logoBox, #navActivitesBox {
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+        }
+        .navGapBox {
+            height: 80px;
+            width: 70px;
+            background-color: darkorange;
+        }
+        #demarcation1, #demarcation2 {
+            display: flex;
+            width: 20px;
+            height: 300px;
+            background-color: blueviolet;
+        }
+        #LienActivites, #LienSincrire, #LienHeb {
+            font-size: 18px;
+            width: 120px;
+            margin-top: 40px;
+        }
+        #navActivitesBox {
+            margin-bottom: 20px;
+        }
+        #logoBox  {
+            items-size: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #logoGapBox {
+            width:250px;
+        }
+        #navSincrireBox {
+            padding-top: 10px;
+            height: 80px;
+        }
+        
+        #bordureGrisBox {
+            height: 70px;
+            margin-top: 25px;
+            border-top: 2px solid #f2f2f2;
+        }
+        #bordureBleuBox {
+            height: 25px;
+            border-bottom: 2px solid #0065fc;
+        }
 
         /*navBar en mode carré*/
         #navLogo {
@@ -1114,7 +1206,6 @@ footer h4 {
             flex-direction: row;
             height: 80%;
             width: 1240px;
-
         }
         #navBoite1 {
            min-width: 1500px;
@@ -1127,7 +1218,6 @@ footer h4 {
         #demarcation1, #demarcation2 {
             background-color: none;
         }
-        
         #navColumn1, #navColumn2 {
             display: flex;
             flex-direction: row;
@@ -1163,7 +1253,6 @@ footer h4 {
         #navHerbergementsBox {
             padding-bottom: 40px;
             margin-bottom: 40px;
-
         }
         #logoBox {
             margin-top: 40px;
