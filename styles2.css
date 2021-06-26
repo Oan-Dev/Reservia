@@ -1099,6 +1099,48 @@ footer h4 {
 
 @media screen and (min-width: 1600px) {
         /* Comportement des Flexbox pour Desktop */
+        /* Nouvelle navBar */
+        #NavContainer {
+            display: flex;
+            flex-direction: column;
+            min-width: 1600px;
+            width: 100%;
+        }
+        #barBox {
+            width: 100%;
+            background-color: black;
+            justify-content: flex-end;
+        }
+        #navBoite1, #navBoite2 {
+            flex-direction: row;
+            background-color: darkgrey;
+            height: 80%;
+
+        }
+        #navBoite1 {
+           width: auto;
+        }
+        #navBoite2 {
+            width: 400px;
+            justify-content: flex-end;
+        }
+        #demarcation1, #demarcation2 {
+            background-color: blueviolet;
+        }
+        
+        #navColumn1, #navColumn2 {
+            display: flex;
+            flex-direction: row;
+        }
+        #navColumn1 {
+            justify-content: space-between;
+            background-color: darkorange;
+            width: inherit;
+        }
+        #navColumn2 {
+            background-color: lightgreen;
+            align-items: center;
+        }
 
         /* La NavBar */
         #navBloc {
