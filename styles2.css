@@ -135,6 +135,9 @@ html, body {
 .colorLien2 {
     color: black;
 }
+/* Nouveau Format navBar */
+
+
 /* La navBar + logo */
 #navLogo {
     width: 80%;
@@ -692,16 +695,17 @@ footer h4 {
 
              /* bloc Activites avec ses 2 blocs A et B */
 
-             #activitesBox {
-             display: flex;
-             width: 100%;
+            #activitesBox {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             }
             #blocActivites {
             display: flex;
             flex-direction: column;
             }   
             #titreActivitesBox {
-            margin-left: 35px;
+            margin-left: 100px;
             }
             #blocA {
             display: flex;
@@ -948,6 +952,7 @@ footer h4 {
 
        #activitesBox {
         display: flex;
+        flex-direction: column;
         width: 100%;
         }
         #blocActivites {
@@ -1185,6 +1190,7 @@ footer h4 {
 
         #activitesBox {
            display: flex;
+           flex-direction: column;
            width: 100%;
         }
         #blocActivites {
