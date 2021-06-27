@@ -511,7 +511,7 @@ footer h4 {
     height: 150px;
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 60px;
     min-width:100px;
     width: 100%;
     }
@@ -532,7 +532,7 @@ footer h4 {
     justify-content: flex-end;
     padding-top: 30px;
     width: 145%;
-    margin-left:50px;
+    margin-left:30px;
     }
 
     #navColumn2  {
@@ -572,7 +572,7 @@ footer h4 {
             
     #demarcation1, #demarcation2 {
     display: flex;
-    width: 40px;
+    width: 10px;
     height: 300px;
     }
 
@@ -584,6 +584,7 @@ footer h4 {
 
     #navActivitesBox {
     margin-bottom: 20px;
+    padding-left: 30px;
     }
 
     #logoBox  {
@@ -606,6 +607,7 @@ footer h4 {
 
     #navHerbergementsBox {
     margin-top: 10px;
+    padding-right: 20px;
     }
 
     #bordureGrisBox {
@@ -618,7 +620,7 @@ footer h4 {
     #bordureBleuBox {
     height: 25px;
     border-bottom: 2px solid #0065fc;
-    margin-left: 250px;
+    margin-left: 200px;
     }
 
     /* Comportement Filtres */
