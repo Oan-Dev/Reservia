@@ -137,7 +137,7 @@ html, body {
 }
 /* Nouveau Format navBar */
 #navContainer {
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -149,7 +149,7 @@ html, body {
     align-items: stretch;
 }
 #navColumn1 { 
-     height: 100px;
+     height: 80px;
      justify-content: flex-start;
      padding-top: 30px;
 }
@@ -157,7 +157,7 @@ html, body {
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
-    height: 100px;
+    height: 80px;
 }
 #navBoite1, #navBoite2 {
     display: flex;
@@ -181,7 +181,7 @@ html, body {
 #demarcation1, #demarcation2 {
     display: flex;
     width: 20px;
-    height: 150px;
+    height: 80px;
 }
 #LienActivites, #LienSincrire, #LienHeb {
     font-size: 18px;
@@ -508,10 +508,10 @@ footer h4 {
     /* Organiser boites de container dans la navBar en carré */
     /* Nouvelle navBar */
     #navContainer {
-    height: 300px;
+    height: 150px;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 50px;
     min-width:100px;
     width: 100%;
     }
@@ -528,7 +528,7 @@ footer h4 {
     }
 
     #navColumn1 { 
-    height: 150px;
+    height: 100px;
     justify-content: flex-end;
     padding-top: 30px;
     width: 145%;
@@ -539,7 +539,7 @@ footer h4 {
     display: flex;
      justify-content: flex-end;
     flex-direction: column-reverse;
-    height: 150px;
+    height: 100px;
     width: 60%;
     margin-right:50px;
     padding-right: 200px;
@@ -572,7 +572,7 @@ footer h4 {
             
     #demarcation1, #demarcation2 {
     display: flex;
-    width: 20px;
+    width: 40px;
     height: 300px;
     }
 
@@ -656,10 +656,10 @@ footer h4 {
     /* Comportement des Flexbox pour petite tablette */
          /* Nouvelle navBar */
         #navContainer {
-            height: 300px;
+            height: 200px;
             display: flex;
             flex-direction: row;
-            margin-top: 20px;
+            margin-top: 40px;
             min-width:375px;
             width: 100%;
         }
@@ -688,6 +688,7 @@ footer h4 {
             width: 60%;
             margin-right:50px;
             padding-right: 200px;
+            padding-bottom: 30px;
 
         }
         #navBoite1, #navBoite2 {
@@ -716,8 +717,8 @@ footer h4 {
         
         #demarcation1, #demarcation2 {
             display: flex;
-            width: 20px;
-            height: 300px;
+            width: 40px;
+            height: 100px;
         }
         #LienActivites, #LienSincrire, #LienHeb {
             font-size: 18px;
@@ -1295,17 +1296,16 @@ footer h4 {
             margin-bottom: 40px;
             margin-left: 150px;
             width: 40%;
-
         }
         #logoBox {
-            items-size: 50px;
+            items-size: 60px;
+            images-size: 60px;
             margin-top: 40px;
             width: 5%;
             height: 70px;
             margin-left: 70px;
             margin-right: 100px;
         }
-
 
         /* Filtres à mettre sur une ligne*/
         #filtre {
@@ -1476,7 +1476,7 @@ footer h4 {
            display: flex;
            flex-direction: row;
            justify-content: space-between;
-           width: 1600px;
+           min-width: 1500px;
            padding-top:30px;
         }
 
