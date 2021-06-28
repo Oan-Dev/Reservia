@@ -152,6 +152,7 @@ html, body {
      height: 80px;
      justify-content: flex-start;
      padding-top: 30px;
+     margin-left: 0px;
 }
 #navColumn2  {
     display: flex;
@@ -163,6 +164,11 @@ html, body {
     display: flex;
     flex-direction: row;
     max-width: 667px;
+}
+#navGapColumn1 {
+    background-color: black;
+    width: .5px;
+    height: .5px;
 }
 
 #navSincrireBox, #navHerbergementsBox {
@@ -182,6 +188,7 @@ html, body {
     display: flex;
     width: 20px;
     height: 80px;
+    background-color: blueviolet;
 }
 #LienActivites, #LienSincrire, #LienHeb {
     font-size: 18px;
@@ -1229,7 +1236,7 @@ footer h4 {
         #navColumn1 {
             justify-content: space-between;
             align-items: flex-start;
-            width: 1600px;
+            width: 800px;
             height: 70%;
             margin-bottom: 30px;
         }
@@ -1240,6 +1247,7 @@ footer h4 {
             justify-content: space-around;
             padding-top: 30px;
         }
+
         #navHebGapBox {
             width: 1000px;
         }
@@ -1271,7 +1279,7 @@ footer h4 {
             margin-left: 70px;
             margin-right: 100px;
         }
-       
+
         /* Filtres à mettre sur une ligne*/
         #filtre {
             display: flex;
