@@ -655,7 +655,7 @@ footer h4 {
    
 }
 @media screen and (min-width: 768px) and (max-width: 1240px){
-    /* Comportement des Flexbox pour petite tablette */
+    /* Comportement des Flexbox pour petite tablette et grands smartphones*/
          /* Nouvelle navBar */
         #navContainer {
             height: 200px;
@@ -925,216 +925,174 @@ footer h4 {
 }
 
 @media screen and (min-width: 1240px) and (max-width: 1600px) {
-    /* Comportement des Flexbox pour tablette */
+    /* Comportement des Flexbox pour tablette & petite Desktop */
         /* Nouvelle navBar */
-        #navContainer {
-            height: 300px;
+        #NavContainer {
             display: flex;
-            flex-direction: row;
-            margin-top: 20px;
-            min-width:768px;
+            flex-direction: column;
+            min-width: 768px;
             width: 100%;
         }
         #barBox {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: stretch;
-            min-width:768px;
-            max-width: 100%;
-            align-items: center;
-
-        }
-        #navColumn1 { 
-             height: 150px;
-             justify-content: flex-end;
-             padding-top: 30px;
-             width: 145%;
-             margin-left:50px;
-        }
-        #navColumn2  {
-            display: flex;
+            width: 100%;
             justify-content: flex-end;
-            flex-direction: column-reverse;
-            height: 150px;
-            width: 55%;
-            margin-right:50px;
-            padding-right: 200px;
-
         }
         #navBoite1, #navBoite2 {
-            display: flex;
             flex-direction: row;
-            justify-content: center;
-            min-width: 768px;
-            max-width: 1599px;
+            height: 80%;
+            width: 768px;
         }
-        
-        #navSincrireBox, #navHerbergementsBox {
-            display: flex;
-            flex-direction: row-reverse;
+        #navBoite1 {
+           min-width: 300px;
+           justify-content: space-between;
+           margin-right: 250px;
         }
-        #logoBox, #navActivitesBox {
-            display: flex;
-            flex-direction: row;
-            height: 60px;
-            width:60%;
+        #navBoite2 {
+            width: 600px;
+            justify-content: flex-end;
+            margin-right: 50px;
         }
-        
-        .navGapBox {
-            height: 80px;
-            width: 50px;
-        }
-        
         #demarcation1, #demarcation2 {
+            background-color: none;
+            width: 40px;
+        }
+        #navColumn1, #navColumn2 {
             display: flex;
-            width: 20px;
-            height: 300px;
+            flex-direction: row;
         }
-        #LienActivites, #LienSincrire, #LienHeb {
-            font-size: 18px;
-            width: 120px;
-            margin-top: 40px;
-        }
-        #navActivitesBox {
+        #navColumn1 {
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 1240px;
+            height: 70%;
             margin-bottom: 20px;
         }
-        #logoBox  {
-            items-size: 50px;
-            display: flex;
-            justify-content: space-between;
-            height: 60px;
+        #navColumn2 {
+            align-items: center;
+            width: 600px;
+            margin-top: 40px;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+        #navHebGapBox {
+            width: 1000px;
         }
         #logoGapBox {
-            width:250px;
+            width: 200px;
         }
-        #navSincrireBox {
-            padding-top: 10px;
-            height: 80px;
+        #navActivitesBox {
+            margin-top: 10px;
+            margin-left: 350px;
         }
-        
-        #bordureGrisBox {
+        #LienHeb {
+            border-top: 2px solid blue;
+            padding: 40px;
+            height: 100px;
+            width: 150px;
+            text-align: center;
+        }
+        #navHerbergementsBox {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            width: 5%;
+        }
+        #logoBox {
+            items-size: 60px;
+            images-size: 120px;
+            margin-top: 40px;
             height: 70px;
-            margin-top: 25px;
-            border-top: 2px solid #f2f2f2;
-            margin-right: 150px;
+            margin-left: 70px;
         }
-        #bordureBleuBox {
-            height: 25px;
-            border-bottom: 2px solid #0065fc;
-            margin-left: 450px;
-        }
-
-        /* Le header */
-        header {
-        margin-left: 20px;
-        }
-
+       
         /* Filtres à mettre sur une ligne*/
         #filtre {
-        display: flex;
-        flex-direction: row;
-        height: 90%;
-        width: 100%;
-        margin-left: 30px;
-        padding-left: 10px;
+            display: flex;
+            flex-direction: row;
+            height: 90%;
+            width: 100%;
+            margin-left: 30px;
+            padding-left: 10px;
         }
         #filtreEcoFamille, #filtreRomantiqueAnimaux {
-        margin-left: 20px;
+            margin-left: 20px;
         }
         #filtreRomantiqueAnimaux {
-        display: flex;
-        flex-direction: row;
-        margin-left: 30px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 30px;
         }
         #filtreRomantique {
-        width: 40%;
+            width: 40%;
         }
         #filtreAnimaux {
-        width: 70%;
-        margin-left: 40px;
+            width: 70%;
+            margin-left: 40px;
+
         }
         #filtreEcoFamille {
-        margin-right: 20px;
+            margin-right: 20px;
         }
         #filtreEco {
-        width: 50%;
-        margin-right: 20px;
+            width: 50%;
+            margin-right: 20px;
         }
         #filtreFamille {
-        width: 200px;
-        margin-left: 40px;
+            width: 200px;
+            margin-left: 40px;
         }
-        /* Zone de Recherche */
         #iconRecherche {
-        display: none;
+            display: none;
         }
         #buttonSearch {
-        width: auto;
-        padding-left: 5px;
-        padding-right: 5px;
-        }
-        /*bloc Hebergements & les Populaires.*/
-        #productBox {
-        display: flex;
-        flex-direction: column;
-        }
-        /* Les hebergements */
-        #hebergementsBox {
-        flex: 2;
-        order: 2;
-        background-color: #f2f2f2;
-        margin-right: 40px;
-        display: flex;
-        justify-content: space-between;
-        width: 98%;
-        border-radius: 15px;
-        margin-left: 40px;
+            width: auto;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
+        
+
+        /* blocs Hebergements & les Populaires Mise */
+        
+        #productBox {
+            width: 100%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .blocHebergements {
+            width: 1250px;
+        }
+  
+        #hebergementsBox {
+            flex: 2;
+            order: 1;
+            background-color: #f2f2f2;
+            margin-right: 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 55%;
+            border-radius: 15px;
+        }
         .cubeHebergements {
             margin-left : 20px;
-            justify-content: space-around;
         }
-
-        .blocHebergements {
-            width: 1200px;
-            height: 800px;
-        }
-
-        /*les Populaires */
         #populairesBox {
             flex: 1;
             order: 2;
             margin-left: 40px;
-            width: 98%;
+            width: 25%;
+            padding-left: 40px;
+            padding-right: 10px;
+            padding-top: 20px;
             border-radius: 15px;
-            flex-direction: row;
         }
-                
+        .blocPopulaires {
+            width:80%;
+            margin-left: 20px;
+        }
         #GroupePopulairesBox {
-            width: 100%;
-            height: 200px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding-bottom: 50px;
-        }
-        #populaires1Box, #populaires2Box, #populaires3Box, #titrePopulaires{
-            width: 350px;
-            height: 180px;
-            height: 80%;
-        }
-        #populaires3Box {
-            margin-bottom: 20px;
-        }
-        #titrePopulaires {
-            justify-content: space-between;
-            width: 100%;
-            margin-bottom: 50px;
-        }
-        .cubePopulaires {
-            width: 300px;
+            width: 80%;
         }
 
         #bloc1, #bloc2 {
@@ -1153,17 +1111,17 @@ footer h4 {
 
        /* bloc Activites avec ses 2 blocs A et B */
 
-       #activitesBox {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        #activitesBox {
+           display: flex;
+           flex-direction: column;
+           width: 100%;
         }
         #blocActivites {
-        display: flex;
-        flex-direction: row;
+           display: flex;
+           flex-direction: row;
         }
         #titreActivitesBox {
-        margin-left: 35px;
+           margin-left: 35px;
         }
         #blocA {
         display: flex;
@@ -1181,14 +1139,14 @@ footer h4 {
         margin: auto;
         padding: 10px;
         }
-       .blocActivites2356 {
+        .blocActivites2356 {
         width: 50%;
         height :90%;
         border-radius: 15px;
         margin: 20px;
         }
         .cubeActivites {
-         width: 50%;
+        width: 50%;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #f2f2f2;
         display: flex;
@@ -1198,32 +1156,31 @@ footer h4 {
         margin: 20px;
         }
         #imgActivites1, #imgActivites4 {
-        height: 480px;
+           height: 480px;
         }
 
-               /* footer, chaque compartiment aligné */
-       .footContainer {
-        height: 250px;
-         }
-         #footBox {
-        display: flex;
-        width: 100%;
+       /* footer, chaque compartiment aligné */
+        .footContainer {
+           height: 250px;
+        }
+        #footBox {
+           display: flex;
+           width: 100%;
         }
         footer {
-        margin-left: 20px;
+           margin-left: 20px;
         }
         .blocfoot {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 1150px;
-        padding-top:30px;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           min-width: 900px;
+           padding-top:30px;
         }
 
         footer ul {
-        margin-top: 30px;
+           margin-top: 30px;
         }
-
 }
 
 @media screen and (min-width: 1600px) {
