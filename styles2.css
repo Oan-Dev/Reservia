@@ -224,6 +224,7 @@ a {
     height:600px;
     display: flex;
     margin-left: 50px;
+    margin-top: 50px;
 }
 #navBox3 {
     width: 100%;
@@ -237,6 +238,9 @@ a {
     display: flex;
     flex-direction: column;
 
+}
+#navCol1 {
+    justify-content: space-around;
 }
 #navCol2 {
     justify-content: flex-end;
@@ -283,7 +287,18 @@ a {
     display: flex;
     flex-direction: column;
     margin-left:50px;
-    
+}
+#navlogoBox1, #hebContainer, #navActivitesContainer, #navSincrireContainer {
+    background-color: lightgreen;
+    width: 300px;
+    height: 200px;
+}
+#hebContainer {
+    display: flex;
+    align-items: flex-end;
+}
+#logoContainer {
+    background-color: darkgreen;
 }
 
 
