@@ -218,6 +218,73 @@ a {
     height: 25px;
     border-bottom: 2px solid #0065fc;
 }
+/* navBar Version 3 */
+#navContainerBox {
+    width: 667px;
+    height:600px;
+    display: flex;
+    margin-left: 50px;
+}
+#navBox3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#navCol1, #navCol2 {
+    width: 600px;
+    height: 500px;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+
+}
+#navCol2 {
+    justify-content: flex-end;
+}
+.sizeNavContainer {
+    width: 150px;
+    height: 150px;
+}
+.sizeNavBox {
+    width: 100px;
+    height: 100px;
+}
+
+.flexNavBox {
+    display: flex;
+    flex-direction: row;
+ }
+#navCol2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#navHebContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bubbleBoites {
+    background-color: darkorange;
+    width: 80px;
+    height: 80px;
+}
+
+#intercalaireBox1, #intercalaireBox2 {
+    width: 20px;
+    height: 150px;
+    background-color: blueviolet;
+}
+#hebBubble {
+    background-color: black;
+    width: 90px;
+    height: 90px;
+}
+#lienHebBox1 {
+    display: flex;
+    flex-direction: column;
+    margin-left:50px;
+    
+}
 
 
 /* Header */
