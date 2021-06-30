@@ -220,10 +220,11 @@ a {
 }
 /* navBar Version 3 */
 #navContainerBox {
-    width: 667px;
-    height:300px;
+    max-width: 667px;
+    min-width: 375px;
+    height:400px;
     display: flex;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 50px;
 }
 #navBox3 {
@@ -232,11 +233,11 @@ a {
     flex-direction: row;
 }
 #navCol1, #navCol2 {
-    width: 600px;
-    height: 250px;
+    width: 150px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-
+    background-color: lightgrey;
 }
 #navCol1 {
     display: flex;
@@ -247,11 +248,11 @@ a {
     align-items: flex-end;
 }
 .sizeNavContainer {
-    width: 150px;
+    width: 100px;
     height: 150px;
 }
 .sizeNavBox {
-    width: 100px;
+    width: 50px;
     height: 100px;
 }
 
@@ -262,7 +263,6 @@ a {
 #navCol2 {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
 }
 #logoContainer, #navHebContainer {
     height: 50%;
@@ -271,25 +271,23 @@ a {
     display: flex;
     flex-direction: row;
     margin-left: 50px;
-    width: 250px;
+    width: 125px;
     height: 110px;
 }
 
 .bubbleBoites {
-    background-color: darkorange;
-    width: 80px;
+    width: 10px;
     height: 80px;
 }
 
 #intercalaireBox1, #intercalaireBox2 {
     width: 20px;
-    height: 150px;
+    height: 300px;
     background-color: blueviolet;
 }
 #hebBubble {
-    background-color: black;
-    width: 90px;
-    height: 90px;
+    width: 45px;
+    height: 80px;
 }
 #lienHebBox1 {
     display: flex;
@@ -297,17 +295,15 @@ a {
     margin-left:50px;
 }
 #navlogoBox1, #hebContainer, #navActivitesContainer, #navSincrireContainer {
-    background-color: lightgreen;
-    width: 300px;
+    width: 150px;
     height: 80px;
 }
 #hebContainer {
     display: flex;
     align-items: flex-end;
-    width: 200px;
+    width: 100px;
 }
 #logoContainer {
-    background-color: darkgreen;
 }
 #navActivitesContainer,#navSincrireContainer, #navHebContainer {
     display: flex;
@@ -316,12 +312,22 @@ a {
 #navActivitesContainer {
     justify-content: flex-start;
     align-items: flex-end;
+    height: 120px;
+    margin-top: 30px;
 }
+
 #navBlueBorderLine {
+    width: 150px;
+    height: 50px;
     border-top: 2px solid #0065fc;
+    margin-left: 150px;
 }
-#navGrisBorderLine1 {
-    border-top: 2px solid red;
+#navGreyBorderLine {
+    border-top: 2px solid #f2f2f2;
+    width: 150px;
+    height: 10px;
+    margin-right: 150px;
+    margin-top: 20px;
 }
 
 /* Header */
