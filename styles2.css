@@ -188,7 +188,6 @@ html, body {
     display: flex;
     width: 20px;
     height: 80px;
-    background-color: blueviolet;
 }
 #LienActivites, #LienSincrire, #LienHeb {
     font-size: 18px;
@@ -219,22 +218,27 @@ a {
     border-bottom: 2px solid #0065fc;
 }
 /* navBar Version 3 */
+/* Problématique des Proportions en mode static */
+
 #navContainerBox {
     max-width: 667px;
     min-width: 375px;
-    height:400px;
+    height: 50px;
     display: flex;
-    margin-left: 10px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 300px;
 }
 #navBox3 {
     width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
 }
 #navCol1, #navCol2 {
     width: 150px;
-    height: 300px;
+    height: max-border;
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
@@ -244,93 +248,49 @@ a {
     justify-content: space-around;
 }
 #navCol2 {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.sizeNavContainer {
-    width: 100px;
-    height: 150px;
-}
-.sizeNavBox {
-    width: 50px;
-    height: 100px;
-}
-
-.flexNavBox {
-    display: flex;
-    flex-direction: row;
- }
-#navCol2 {
     display: flex;
     flex-direction: column-reverse;
-}
-#logoContainer, #navHebContainer {
-    height: 50%;
-}
-#navHebContainer {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    width: 50px;
-    height: 110px;
-}
+    justify-content: flex-end;
 
-.bubbleBoites {
-    width: 10px;
-    height: 80px;
 }
-
 #intercalaireBox1, #intercalaireBox2 {
-    width: 20px;
-    height: 300px;
+    width: 15px;
+    height: 150px;
     background-color: blueviolet;
 }
-#hebBubble {
-    width: 45px;
-    height: 80px;
+ #logoContainer {
+    margin-bottom: 20px;
+
 }
-#lienHebBox1 {
-    display: flex;
-    flex-direction: column;
+#navHebContainer {
+    margin-bottom: 10px;
+    background-color: darkgrey;
+    margin-left: 20px;
 }
-#navlogoBox1, #hebContainer, #navActivitesContainer, #navSincrireContainer {
-    width: 150px;
-    height: 80px;
-}
-#hebContainer {
+
+#navSincrireContainer {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    width: 100px;
-}
-#logoContainer {
-}
-#navActivitesContainer,#navSincrireContainer, #navHebContainer {
-    display: flex;
-    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-top: 25px;
 }
 #navActivitesContainer {
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 120px;
     margin-top: 30px;
-    padding-left: 10px;
-}
-#navSincrireContainer {
+    display: flex;
     justify-content: center;
 }
 #navBlueBorderLine {
     width: 150px;
-    height: 50px;
+    height: 10px;
     border-top: 2px solid #0065fc;
-    margin-left: 25px;
+    background-color: darkgrey;
 }
 #navGreyBorderLine {
     border-top: 2px solid #f2f2f2;
-    width: 125px;
+    width: 150px;
     height: 10px;
-    margin-right: 25px;
-    margin-top: 20px;
+    margin-top: 23px;
+    background-color: darkgrey;
 }
 
 /* Header */
