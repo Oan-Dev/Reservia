@@ -136,87 +136,7 @@ html, body {
     color: black;
 }
 /* Nouveau Format navBar */
-#navContainer {
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-#barBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-}
-#navColumn1 { 
-     height: 80px;
-     justify-content: flex-start;
-     padding-top: 30px;
-     margin-left: 0px;
-}
-#navColumn2  {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column-reverse;
-    height: 80px;
-}
-#navBoite1, #navBoite2 {
-    display: flex;
-    flex-direction: row;
-    max-width: 667px;
-}
-#navGapColumn1 {
-    background-color: black;
-    width: .5px;
-    height: .5px;
-}
 
-#navSincrireBox, #navHerbergementsBox {
-    display: flex;
-    flex-direction: row-reverse;
-}
-#logoBox, #navActivitesBox {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-}
-.navGapBox {
-    height: 80px;
-    width: 70px;
-}
-#demarcation1, #demarcation2 {
-    display: flex;
-    width: 20px;
-    height: 80px;
-}
-#LienActivites, #LienSincrire, #LienHeb {
-    font-size: 18px;
-    width: 120px;
-    margin-top: 40px;
-}
-#navActivitesBox {
-    margin-bottom: 20px;
-}
-#logoBox  {
-    items-size: 50px;
-}
-#navSincrireBox {
-    padding-top: 10px;
-    height: 80px;
-}
-
-a {
-    text-decoration: none;
-}
-#bordureGrisBox {
-    height: 70px;
-    margin-top: 25px;
-    border-top: 2px solid #f2f2f2;
-}
-#bordureBleuBox {
-    height: 25px;
-    border-bottom: 2px solid #0065fc;
-}
 /* navBar Version 3 */
 /* Problématique des Proportions en mode static */
 
@@ -226,7 +146,7 @@ a {
     height: 50px;
     display: flex;
     margin-top: 25px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 #navBox3 {
     width: 100%;
@@ -286,6 +206,9 @@ a {
     width: 150px;
     height: 10px;
     margin-top: 23px;
+}
+a {
+    text-decoration: none;
 }
 
 /* Header */
@@ -581,122 +504,6 @@ footer h4 {
 
 @media screen and (max-width: 768px) {
     /* Organiser boites de container dans la navBar en carré */
-    /* Nouvelle navBar */
-    #navContainer {
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 60px;
-    min-width:100px;
-    width: 100%;
-    }
-
-    #barBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    min-width:100px;
-    max-width: 100%;
-    align-items: center;
-    
-    }
-
-    #navColumn1 { 
-    height: 100px;
-    justify-content: flex-end;
-    padding-top: 30px;
-    width: 145%;
-    margin-left:30px;
-    }
-
-    #navColumn2  {
-    display: flex;
-     justify-content: flex-end;
-    flex-direction: column-reverse;
-    height: 100px;
-    width: 60%;
-    margin-right:50px;
-    padding-right: 200px;
-    }
-
-    #navBoite1, #navBoite2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-width: 500px;
-    max-width: 1240px;
-    }
-            
-    #navSincrireBox, #navHerbergementsBox {
-    display: flex;
-    flex-direction: row-reverse;
-    }
-
-    #logoBox, #navActivitesBox {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    width:60%;
-    }
-            
-    .navGapBox {
-    height: 80px;
-    width: 40px;
-    }
-            
-    #demarcation1, #demarcation2 {
-    display: flex;
-    width: 10px;
-    height: 300px;
-    }
-
-    #LienActivites, #LienSincrire, #LienHeb {
-    font-size: 18px;
-    width: 120px;
-    margin-top: 40px;
-    }
-
-    #navActivitesBox {
-    margin-bottom: 20px;
-    padding-left: 30px;
-    }
-
-    #logoBox  {
-    items-size: 50px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 300px;
-    height: 50px;
-    }
-
-    #logoGapBox {
-    width:50px;
-    }
-
-    #navSincrireBox {
-    padding-top: 10px;
-    margin-right: 30px;
-    height: 80px;
-    }
-
-    #navHerbergementsBox {
-    margin-top: 10px;
-    padding-right: 20px;
-    }
-
-    #bordureGrisBox {
-    height: 70px;
-    margin-top: 25px;
-    border-top: 2px solid #f2f2f2;
-    margin-right: 50px;
-    }
-
-    #bordureBleuBox {
-    height: 25px;
-    border-bottom: 2px solid #0065fc;
-    margin-left: 200px;
-    }
 
     /* navBar Version 3 */
     /* Problématique des Proportions en mode media, 
@@ -739,106 +546,6 @@ footer h4 {
 }
 @media screen and (min-width: 768px) and (max-width: 1240px){
     /* Comportement des Flexbox pour petite tablette et grands smartphones*/
-         /* Nouvelle navBar */
-        #navContainer {
-            height: 200px;
-            display: flex;
-            flex-direction: row;
-            margin-top: 40px;
-            min-width:375px;
-            width: 100%;
-        }
-        #barBox {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: stretch;
-            min-width:375px;
-            max-width: 100%;
-            align-items: center;
-
-        }
-        #navColumn1 { 
-             height: 150px;
-             justify-content: flex-end;
-             padding-top: 30px;
-             width: 145%;
-             margin-left:50px;
-        }
-        #navColumn2  {
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column-reverse;
-            height: 150px;
-            width: 60%;
-            margin-right:50px;
-            padding-right: 200px;
-            padding-bottom: 30px;
-
-        }
-        #navBoite1, #navBoite2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            min-width: 667px;
-            max-width: 1240px;
-        }
-        
-        #navSincrireBox, #navHerbergementsBox {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-        #logoBox, #navActivitesBox {
-            display: flex;
-            flex-direction: row;
-            height: 60px;
-            width:60%;
-        }
-        
-        .navGapBox {
-            height: 80px;
-            width: 50px;
-        }
-        
-        #demarcation1, #demarcation2 {
-            display: flex;
-            width: 40px;
-            height: 100px;
-        }
-        #LienActivites, #LienSincrire, #LienHeb {
-            font-size: 18px;
-            width: 120px;
-            margin-top: 40px;
-        }
-        #navActivitesBox {
-            margin-bottom: 20px;
-        }
-        #logoBox  {
-            items-size: 50px;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 200px;
-            height: 60px;
-        }
-        #logoGapBox {
-            width:150px;
-        }
-        #navSincrireBox {
-            padding-top: 10px;
-            height: 80px;
-        }
-        
-        #bordureGrisBox {
-            height: 70px;
-            margin-top: 25px;
-            border-top: 2px solid #f2f2f2;
-            margin-right: 200px;
-        }
-        #bordureBleuBox {
-            height: 25px;
-            border-bottom: 2px solid #0065fc;
-            margin-left: 450px;
-        }
         
         /* navBar Version 3 */
         /* Problématique des Proportions en mode media, 
@@ -1048,84 +755,7 @@ footer h4 {
 
 @media screen and (min-width: 1240px) and (max-width: 1600px) {
     /* Comportement des Flexbox pour tablette & petite Desktop */
-        /* Nouvelle navBar */
-        #NavContainer {
-            display: flex;
-            flex-direction: column;
-            min-width: 768px;
-            width: 100%;
-        }
-        #barBox {
-            width: 100%;
-            justify-content: flex-end;
-        }
-        #navBoite1, #navBoite2 {
-            flex-direction: row;
-            height: 80%;
-            width: 768px;
-        }
-        #navBoite1 {
-           min-width: 300px;
-           justify-content: space-between;
-           margin-right: 250px;
-        }
-        #navBoite2 {
-            width: 600px;
-            justify-content: flex-end;
-            margin-right: 50px;
-        }
-        #demarcation1, #demarcation2 {
-            background-color: none;
-            width: 40px;
-        }
-        #navColumn1, #navColumn2 {
-            display: flex;
-            flex-direction: row;
-        }
-        #navColumn1 {
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 1240px;
-            height: 70%;
-            margin-bottom: 20px;
-        }
-        #navColumn2 {
-            align-items: center;
-            width: 600px;
-            margin-top: 40px;
-            justify-content: space-around;
-            padding-top: 30px;
-        }
-        #navHebGapBox {
-            width: 1000px;
-        }
-        #logoGapBox {
-            width: 200px;
-        }
-        #navActivitesBox {
-            margin-top: 10px;
-            margin-left: 350px;
-        }
-        #LienHeb {
-            border-top: 2px solid blue;
-            padding: 40px;
-            height: 100px;
-            width: 150px;
-            text-align: center;
-        }
-        #navHerbergementsBox {
-            padding-bottom: 40px;
-            margin-bottom: 40px;
-            margin-left: 10px;
-            width: 5%;
-        }
-        #logoBox {
-            items-size: 60px;
-            images-size: 120px;
-            margin-top: 40px;
-            height: 70px;
-            margin-left: 70px;
-        }
+
               /* navBar Version 3 */
         /* Problématique des Proportions en mode media, 
         faire en sorte que Version static se dimensionne parfaitement 
@@ -1163,6 +793,7 @@ footer h4 {
         #navHebContainer {
             padding: 20px;
             margin-top: 20px;
+            border-top: 2px solid #0065FC
         }
         #navActivitesContainer {
             margin-top: 40px;
@@ -1356,85 +987,7 @@ footer h4 {
 
 @media screen and (min-width: 1600px) {
         /* Comportement des Flexbox pour Desktop */
-        /* Nouvelle navBar */
-        #NavContainer {
-            display: flex;
-            flex-direction: column;
-            min-width: 1600px;
-            width: 100%;
-        }
-        #barBox {
-            width: 100%;
-            justify-content: flex-end;
-        }
-        #navBoite1, #navBoite2 {
-            flex-direction: row;
-            height: 80%;
-            width: 1240px;
-        }
-        #navBoite1 {
-           min-width: 1100px;
-           justify-content: space-between;
-           margin-right: 250px;
-        }
-        #navBoite2 {
-            width: 600px;
-            justify-content: flex-end;
-            margin-right: 50px;
-        }
-        #demarcation1, #demarcation2 {
-            background-color: none;
-        }
-        #navColumn1, #navColumn2 {
-            display: flex;
-            flex-direction: row;
-        }
-        #navColumn1 {
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 800px;
-            height: 70%;
-            margin-bottom: 30px;
-        }
-        #navColumn2 {
-            align-items: center;
-            width: 800px;
-            margin-top: 30px;
-            justify-content: space-around;
-            padding-top: 30px;
-        }
 
-        #navHebGapBox {
-            width: 1000px;
-        }
-        #logoGapBox {
-            width: 200px;
-        }
-        #navActivitesBox {
-            margin-top: 20px;
-            margin-left: 100px;
-        }
-        #LienHeb {
-            border-top: 2px solid blue;
-            padding: 40px;
-            height: 100px;
-            width: 150px;
-            text-align: center;
-        }
-        #navHerbergementsBox {
-            padding-bottom: 40px;
-            margin-bottom: 40px;
-            margin-left: 150px;
-            width: 40%;
-        }
-        #logoBox {
-            items-size: 60px;
-            images-size: 120px;
-            margin-top: 40px;
-            height: 70px;
-            margin-left: 70px;
-            margin-right: 100px;
-        }
              /* navBar Version 3 */
         /* Problématique des Proportions en mode media, 
         faire en sorte que Version static se dimensionne parfaitement 
@@ -1471,6 +1024,7 @@ footer h4 {
         #navHebContainer {
             padding: 20px;
             margin-top: 20px;
+            border-top: 2px solid #0065FC
         }
         #navActivitesContainer {
             margin-top: 40px;
