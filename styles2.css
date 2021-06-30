@@ -270,8 +270,8 @@ a {
 #navHebContainer {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    width: 125px;
+    margin-left: 15px;
+    width: 50px;
     height: 110px;
 }
 
@@ -292,7 +292,6 @@ a {
 #lienHebBox1 {
     display: flex;
     flex-direction: column;
-    margin-left:50px;
 }
 #navlogoBox1, #hebContainer, #navActivitesContainer, #navSincrireContainer {
     width: 150px;
@@ -300,6 +299,7 @@ a {
 }
 #hebContainer {
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
     width: 100px;
 }
@@ -314,19 +314,22 @@ a {
     align-items: flex-end;
     height: 120px;
     margin-top: 30px;
+    padding-left: 10px;
 }
-
+#navSincrireContainer {
+    justify-content: center;
+}
 #navBlueBorderLine {
     width: 150px;
     height: 50px;
     border-top: 2px solid #0065fc;
-    margin-left: 150px;
+    margin-left: 25px;
 }
 #navGreyBorderLine {
     border-top: 2px solid #f2f2f2;
-    width: 150px;
+    width: 125px;
     height: 10px;
-    margin-right: 150px;
+    margin-right: 25px;
     margin-top: 20px;
 }
 
