@@ -241,7 +241,6 @@ a {
     height: max-border;
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
 }
 #navCol1 {
     display: flex;
@@ -256,7 +255,6 @@ a {
 #intercalaireBox1, #intercalaireBox2 {
     width: 15px;
     height: 150px;
-    background-color: blueviolet;
 }
  #logoContainer {
     margin-bottom: 20px;
@@ -264,7 +262,6 @@ a {
 }
 #navHebContainer {
     margin-bottom: 10px;
-    background-color: darkgrey;
     margin-left: 20px;
 }
 
@@ -283,14 +280,12 @@ a {
     width: 150px;
     height: 10px;
     border-top: 2px solid #0065fc;
-    background-color: darkgrey;
 }
 #navGreyBorderLine {
     border-top: 2px solid #f2f2f2;
     width: 150px;
     height: 10px;
     margin-top: 23px;
-    background-color: darkgrey;
 }
 
 /* Header */
@@ -703,6 +698,14 @@ footer h4 {
     margin-left: 200px;
     }
 
+    /* navBar Version 3 */
+    /* Problématique des Proportions en mode media, 
+    faire en sorte que Version static se dimensionne parfaitement 
+    aux dimension des différentes écrans mobile */
+    #navContainerBox {
+        device-width: 100%;
+    }
+
     /* Comportement Filtres */
     .filtreTexte {
         display: flex;
@@ -836,6 +839,39 @@ footer h4 {
             border-bottom: 2px solid #0065fc;
             margin-left: 450px;
         }
+        
+        /* navBar Version 3 */
+        /* Problématique des Proportions en mode media, 
+        faire en sorte que Version static se dimensionne parfaitement 
+        aux dimension des différentes écrans mobile & Tablette en
+        768px et 1240px */
+        #navContainerBox {
+            display: flex;
+            max-width: 100%;
+            height: 200px;
+        }
+        #navBox3 {
+            display: flex;
+            width: 100%;
+            flex: 1 1 auto;
+            justify-content: stretch;
+
+        }
+        #intercalaireBox1, #intercalaireBox2 {
+            width: 2em;
+        }
+        #navCol1, #navCol2 {
+           justify-content:space-around;
+           align-items: center;
+           width: 100%;
+        }
+         #logoContainer {
+            margin-right: 70px;
+        }
+        #navSincrireContainer {
+            margin-left: 70px;
+        }
+
             /* Le header */
             header {
             margin-left: 40px;
@@ -1090,7 +1126,54 @@ footer h4 {
             height: 70px;
             margin-left: 70px;
         }
-       
+              /* navBar Version 3 */
+        /* Problématique des Proportions en mode media, 
+        faire en sorte que Version static se dimensionne parfaitement 
+        aux dimension des différentes écrans Tablette & petit Desktop en
+        1240px et 1600px */
+        #navContainerBox {
+            max-width: 100%;
+            display: flex;
+            height :100px;
+        }
+        #navBox3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex: 1 auto;
+            justify-content: stretch;
+        }
+        #navCol1, #navCol2 {
+            display: flex;
+            flex-direction: row;
+        }
+        #navCol1 {
+            display: flex;
+            justify-content: space-between;
+            flex: 2;
+        }
+        #navCol2 {
+            display: flex;
+            justify-content: space-around;
+            flex: 1;
+        }
+        #navGreyBorderLine, #navBlueBorderLine {
+            display: none;
+        }
+        #navHebContainer {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #navActivitesContainer {
+            margin-top: 40px;
+        }
+        #navSincrireContainer {
+            margin-top: 40px;
+        }
+        #logoContainer {
+            margin-top: 25px;
+        }
+
         /* Filtres à mettre sur une ligne*/
         #filtre {
             display: flex;
@@ -1351,6 +1434,52 @@ footer h4 {
             height: 70px;
             margin-left: 70px;
             margin-right: 100px;
+        }
+             /* navBar Version 3 */
+        /* Problématique des Proportions en mode media, 
+        faire en sorte que Version static se dimensionne parfaitement 
+        aux dimension des différentes écrans Grand Desktop en 1600px */
+        #navContainerBox {
+            max-width: 100%;
+            display: flex;
+            height :100px;
+        }
+        #navBox3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex: 1 auto;
+            justify-content: stretch;
+        }
+        #navCol1, #navCol2 {
+            display: flex;
+            flex-direction: row;
+        }
+        #navCol1 {
+            display: flex;
+            justify-content: space-between;
+            flex: 2;
+        }
+        #navCol2 {
+            display: flex;
+            justify-content: space-around;
+            flex: 1;
+        }
+        #navGreyBorderLine, #navBlueBorderLine {
+            display: none;
+        }
+        #navHebContainer {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #navActivitesContainer {
+            margin-top: 40px;
+        }
+        #navSincrireContainer {
+            margin-top: 40px;
+        }
+        #logoContainer {
+            margin-top: 25px;
         }
 
         /* Filtres à mettre sur une ligne*/
