@@ -221,6 +221,7 @@ header {
     margin-bottom: 30px;
     padding-left: 15px;
     justify-content: center;
+    margin-left: 20px;
 }
 #texteAccroche h1 {
     margin-bottom: 10px;
@@ -803,6 +804,7 @@ footer h4 {
         }
         #logoContainer {
             margin-top: 25px;
+            margin-left: 50px;
         }
 
         /* Filtres à mettre sur une ligne*/
@@ -1034,6 +1036,7 @@ footer h4 {
         }
         #logoContainer {
             margin-top: 25px;
+            margin-left: 50px;
         }
 
         /* Filtres à mettre sur une ligne*/
@@ -1195,24 +1198,30 @@ footer h4 {
        /* footer, chaque compartiment aligné */
         .footContainer {
            height: 250px;
+           width: 100%;
         }
         #footBox {
            display: flex;
            width: 100%;
         }
         footer {
-           margin-left: 20px;
+            display: flex;
+            margin-left: 20px;
+            flex: 1 auto;
+            max-width: 75%;
+
         }
         .blocfoot {
            display: flex;
            flex-direction: row;
            justify-content: space-between;
-           min-width: 1500px;
+           width: 100%;
            padding-top:30px;
         }
 
         footer ul {
            margin-top: 30px;
+
         } 
         
 }
