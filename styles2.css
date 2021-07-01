@@ -158,7 +158,6 @@ html, body {
 }
 #navCol1, #navCol2 {
     width: 150px;
-    height: max-border;
     display: flex;
     flex-direction: column;
     font-size : 18px;
@@ -512,7 +511,7 @@ footer h4 {
     faire en sorte que Version static se dimensionne parfaitement 
     aux dimension des différentes écrans mobile */
     #navContainerBox {
-        device-width: 100%;
+        width: 100%;
     }
 
     /* Comportement Filtres */
