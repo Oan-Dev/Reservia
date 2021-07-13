@@ -107,3 +107,27 @@ html, body {
 }
 
 /* fin format du contenu */
+
+/* Couleurs */
+.colorBleu {
+    color: #0065fc;
+}
+.colorBleuClair {
+    color: #deebff;
+}
+.colorGris {
+    color: #f2f2f2;
+}
+
+.backBleu {
+    background-color: #0065fc;
+}
+.backBleuClair {
+    background-color: #deebff;
+}
+.backGris {
+    background-color: #f2f2f2;
+}
+.colorLien2 {
+    color: black;
+}

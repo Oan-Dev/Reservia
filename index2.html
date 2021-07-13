@@ -16,14 +16,98 @@
 
 <body>
     <header>
-        <nav class="container__nav"></nav>
-        <div class="Container__filtres">
+        <!-- navbar + logo -->
+        <nav class="container__nav">
+            <!-- Colonne Logo + Hébergements + Bordure bleu -->
+            <div class="container__colonneNav">
+                <div class="container__logo">
+                    <div class="block__logo">
+                        <img Class="element-logo" src="./images/logo/Reservia.svg" alt="Logo Reservia" />
+                    </div>
+                </div>
+                <div class="block__lienherhergements">
+                    <a class="element-lienHebergements" href="#lienHebergements">Hébergements</a>
+                </div>
+                <div class="element-navBlueBorderLine"></div>
+            </div>
+            <div class="block__intercalaireBox"></div>
+            <!-- Colonne Activites + Sincrire + Bordure Grise -->
+            <div class="block__intercalaireBox"></div>
+            <div class="container__colonneNav">
+                <div class="element-navGreyBorderLine"></div>
+                <div class="container__navActivites">
+                    <div class="block__navActivites">
+                        <a class="element-lienActivites" href="#lienactivites">Activités</a>
+                    </div>
+                </div>
+                <div class="container__navSincrire">
+                    <div class="Block__navSincrire">
+                        <a class="element-lienSincrire" href="#">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Container de la Zone Recherche & des filtres -->
+        <div class="Container__filtresRecherche">
+            <!-- Container Zone de Recherche -->
+            <div class="container__Recherche">
+                <div id="block__Recherche">
+                    <div class="element-iconMaps">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <input class="element-zoneRecherche" type="search" value="Marseille, France">
+                    </div>
+                    <div class="block__btnRecherche">
+                        <i class="fas fa-search fa-lg element-iconRecherche"></i>
+                        <p class="element-motRecherche">Rechercher</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Container Filtres -->
+            <div class="container__filtres">
+                <div class="block__titreFiltres">
+                    <h3>Filtres</h3>
+                </div>
+
+                <!-- Block 1 pour layout en carré -->
+                <div class="block__filtreEcoFamille">
+                    <div class="block__filtreEco">
+                        <div class="element-filtreIcons">
+                            <i class="fas fa-money-bill-wave fa-lg"></i>
+                        </div>
+                        <div class="element-filtreTexte">Economique</div>
+                    </div>
+                    <div class="block__filtreFamille">
+                        <div class="element-filtreIcons">
+                            <i class="fas fa-child fa-lg"></i>
+                        </div>
+                        <div class="element-filtreTexte">Familial</div>
+                    </div>
+                </div>
+
+                <!-- block 2 pour layout en carré -->
+                <div class="block__filtreRomantiqueAnimaux">
+                    <div class="block__filtreRomantique">
+                        <div class="element-filtreIcons">
+                            <i class="fas fa-heart fa-lg"></i>
+                        </div>
+                        <div class="filtreTexte">Romantique</div>
+                    </div>
+                    <div class="block__filtreAnimaux">
+                        <div class="element-filtreIcons">
+                            <i class="fas fa-dog fa-lg"></i>
+                        </div>
+                        <div class="element-filtreTexte">Animaux domestiques</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Container des Populaires-->
     <div class="container__main">
-        <div class="container__hebergements">
+        <div id="lienHebergements" class="container__hebergements">
             <div class="container__populaires">
                 <div class="Block__titre-populaires">
                     <h2> Les plus populaires</h2>
@@ -178,7 +262,7 @@
         </div>
 
         <!-- Format containers des Activités emblématiques de la ville -->
-        <div class="container__activites">
+        <div id="lienactivites" class="container__activites">
             <h2 id="titreActivitesBox">Activités à Marseille</h2>
 
             <!-- Container des Blocs Activités -->
@@ -234,19 +318,40 @@
 
 
     <footer class="Container__down">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li></li>
-            <li></li>
-        </ul>
+        <div class="block__Propos">
+            <div class="block__titreFoot">
+                <h4>A propos</h4>
+            </div>
+            <div class="block__listFoot">
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialités</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__Charte">
+            <div class="block__titreFoot">
+                <h4>Nos hébergements</h4>
+            </div>
+            <div class="block__listFoot">
+                <ul>
+                    <li>Charte de qualité</li>
+                    <li>Soumettre votre Hôtel</li>
+                </ul>
+            </div>
+        </div>
+        <div class="block__Assistance">
+            <div class="block__titreFoot">
+                <h4>Assistance</h4>
+            </div>
+            <div class="block__listFoot">
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </div>>
     </footer>
 
 </body>
