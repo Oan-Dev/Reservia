@@ -1,0 +1,109 @@
+* { 
+    margin:0;
+    padding:0;
+}
+/* GENERAL */
+/* Fonts Family, Caractère de Police */
+/* Important de Fonts */
+    @font-face {
+        font-family: "raleway";
+        src: url("./fonts/raleway/Raleway-Light.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-Bold.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-ExtraBold.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-Regular.ttf") format("ttf");
+    }
+
+/* Fonts dans Body */
+html, body {
+    font-family: raleway, 'Tangerine', Arial, 'Times New Roman', Helvetica, sans-serif;
+}
+/* format du contenu */
+
+/*Herbergements Contenu & format du contenu */
+#imgHebergements1 {
+    background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
+}
+
+#imgHebergements2 {
+    background-image: url('./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg') ;
+}
+#imgHebergements3 {
+    background-image: url('./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg') ;
+}
+#imgHebergements4 {
+    background-image: url('./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg') ;
+}
+#imgHebergements5 {
+    background-image: url('./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') ;
+}
+#imgHebergements6 {
+    background-image: url('./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') ;
+}
+
+.element-ImgHebergements {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* Les plus populaires  Contenu & format du contenu */
+#imgPopulaires1 {
+    background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') ;
+}
+#imgPopulaires2 {
+    background-image: url('./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg') ;
+}
+#imgPopulaires3 {
+    background-image: url('./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg') ;
+}
+
+.element-ImgPopulaires {
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* Les Activités Contenu & format du contenu */
+#imgActivites1 {
+    background-image: url('./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') ;
+}
+#imgActivites2 {
+    background-image: url('./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg') ;
+}
+#imgActivites3 {
+    background-image: url('./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg') ;
+}
+#imgActivites4 {
+    background-image: url('./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg') ;
+}
+#imgActivites5 {
+    background-image: url('./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg') ;
+}
+#imgActivites6 {
+    background-image: url('./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg') ;
+}
+
+.element-ImgActivites {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+.hauteurTitre {
+    height: 70px;
+}
+.titreActivites {
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+    padding-left : 5%;
+    width : 95%;
+}
+
+/* fin format du contenu */
