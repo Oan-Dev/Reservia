@@ -136,12 +136,67 @@ $color: .colorBleu;
 /*Voir si possible instauration de 
 variables, functions & mixins en css non-sass */
 
+/* le Header navBar et filtres */
+
+/*les Filtres */
+.container__filtres {
+    display: Block;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    padding-right: 20px;
+    width: 80%;
+    height: 200px;
+}
+.block__filtreEco, 
+.block__filtreFamille,
+.block__filtreRomantique,
+.block__filtreAnimaux {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.element-filtresTexte--hover:hover > {
+    color: #0065FC;
+}
+.elements-filtresIcon--hover:hover > {
+    color: white;
+    background-color: #0065FC;
+}
+.element-filtreIcons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-filtreTexte {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Le grand container principal
  & ses enfants directs */
  .container__main {
-     width: 667px;
-     height: 150vh;
-     padding: 5px;
+     width: auto;
+     height: auto;
 
 
  }
@@ -172,6 +227,11 @@ variables, functions & mixins en css non-sass */
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+}
+.Block__titre-populaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .block__label-populaires {
@@ -251,7 +311,9 @@ variables, functions & mixins en css non-sass */
 
 /* le footer */
 .Container__down {
-    height: 60vh;
+    display: block;
+    bottom: 0;
+    height: 65vh;
     margin-top: 20px;
     padding: 20px;
     background-color: #f2f2f2;
