@@ -226,8 +226,8 @@ variables, functions & mixins en css non-sass */
 
 /* Block Activites, 
    mode etiquetage*/
-   .block__labelActivites2356, 
-   .block__labelActivites {
+   .block__labelActivites,
+   .element-labelActivites2356 {
     width: 95%;
     margin-bottom: 20px;
     padding: 5px;
@@ -236,11 +236,10 @@ variables, functions & mixins en css non-sass */
 }
 
   .element-labelActivites {
-    width: 95%;
+    width: 100%;
     padding-top: 15px;
     margin-bottom: 20px;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 1px #f2f2f2; 
   }
   .element-sizeTitreActivites {
       height: 50px;
@@ -252,11 +251,22 @@ variables, functions & mixins en css non-sass */
 
 /* le footer */
 .Container__down {
-    height: 50vh;
+    height: 60vh;
     margin-top: 20px;
     padding: 20px;
     background-color: #f2f2f2;
 }
+ul {
+    margin-bottom: 25px;
+}
 ul li {
     list-style: none;
+    margin-bottom: 15px;
+}
+
+footer h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
