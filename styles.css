@@ -140,38 +140,47 @@ variables, functions & mixins en css non-sass */
  & ses enfants directs */
  .container__main {
      width: 667px;
-     height: 100vh;
-     padding: 10px;
+     height: 150vh;
+     padding: 5px;
+
+
  }
  .container__hebergements {
      height: auto;
      width: auto;
-     margin: 5px auto;
+     margin: 5px 5px;
+     padding: 50px 5px;
 
  }
-/* Block les plus Populaires*/
+ .top-block__hebergements {
+     height: auto;
+     margin-bottom:5px;
+     padding: 35px 5px;
+ }
+ .container__activites {
+     width: 95%;
+     padding: 10px;
+ }
+/* Block les plus Populaires, 
+   mode Etiquetage */
 .container__populaires {
-    height:600px;
+    height:650px;
     width: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 60px;
     padding: 5px;
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-
 }
-
 
 .block__label-populaires {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 10px 0;
+    margin: 15px 5px;
 }
-
 
 .block__label-populaires {
     background-color: white;
@@ -193,11 +202,61 @@ variables, functions & mixins en css non-sass */
    margin-bottom: 20px;
 }
 
+/* Block Hebergements, 
+   mode etiquetage*/
+   .block__label-hebergements {
+    width: 95%;
+    height: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+   }
+   .element-labelHebergements {
+    width: 90%;
+    margin-top: 10px;
+    padding-left: 5%;
+   }
+   .element-labelHebergements h3, 
+   .element-labelHebergements p, 
+   .element-labelHebergements div {
+    margin: 5px;
+}
 
+/* Block Activites, 
+   mode etiquetage*/
+   .block__labelActivites2356, 
+   .block__labelActivites {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
 
+  .element-labelActivites {
+    width: 95%;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2; 
+  }
+  .element-sizeTitreActivites {
+      height: 50px;
+      margin-left: 10px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+  }
 
-
-
-
-
-
+/* le footer */
+.Container__down {
+    height: 50vh;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+ul li {
+    list-style: none;
+}
