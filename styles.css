@@ -131,3 +131,73 @@ html, body {
 .colorLien2 {
     color: black;
 }
+
+$color: .colorBleu; 
+/*Voir si possible instauration de 
+variables, functions & mixins en css non-sass */
+
+/*Le grand container principal
+ & ses enfants directs */
+ .container__main {
+     width: 667px;
+     height: 100vh;
+     padding: 10px;
+ }
+ .container__hebergements {
+     height: auto;
+     width: auto;
+     margin: 5px auto;
+
+ }
+/* Block les plus Populaires*/
+.container__populaires {
+    height:600px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+
+.block__label-populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.block__label-populaires {
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+    margin: 5px;
+}
+.element-labelPopulaires {
+    width: 60%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.element-labelPopulaires h3,
+.element-labelPopulaires p,
+.element-labelPopulaires div {
+   margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
