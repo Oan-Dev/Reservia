@@ -19,7 +19,7 @@
         <!-- navbar + logo -->
         <nav class="container__nav">
             <!-- Colonne Logo + Hébergements + Bordure bleu -->
-            <div class="container__colonneNav">
+            <div id="container__colonneNav1">
                 <div class="container__logo">
                     <div class="block__logo">
                         <img Class="element-logo" src="./images/logo/Reservia.svg" alt="Logo Reservia" />
@@ -33,15 +33,15 @@
             <div class="block__intercalaireBox"></div>
             <!-- Colonne Activites + Sincrire + Bordure Grise -->
             <div class="block__intercalaireBox"></div>
-            <div class="container__colonneNav">
+            <div id="container__colonneNav2">
                 <div class="element-navGreyBorderLine"></div>
                 <div class="container__navActivites">
-                    <div class="block__navActivites">
+                    <div class="block__lienActivites">
                         <a class="element-lienActivites" href="#lienactivites">Activités</a>
                     </div>
                 </div>
                 <div class="container__navSincrire">
-                    <div class="Block__navSincrire">
+                    <div id="block__lienSincrire" class="block__lienSincrire">
                         <a class="element-lienSincrire" href="#">S'inscrire</a>
                     </div>
                 </div>
@@ -59,8 +59,8 @@
                         <input class="element-zoneRecherche" type="search" value="Marseille, France">
                     </div>
                     <div class="block__btnRecherche">
-                        <i class="fas fa-search fa-lg element-iconRecherche"></i>
-                        <p class="element-motRecherche">Rechercher</p>
+                        <i class="fas fa-search fa-lg element-iconRecherche element-iconRecherche--hidden"></i>
+                        <p class="element-motRecherche element-motRecherche--hidden">Rechercher</p>
                     </div>
                 </div>
             </div>

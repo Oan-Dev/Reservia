@@ -132,25 +132,53 @@ html, body {
     color: black;
 }
 
-$color: .colorBleu; 
+/*$color: .colorBleu;*/ 
 /*Voir si possible instauration de 
 variables, functions & mixins en css non-sass */
 
 /* le Header navBar et filtres */
 header {
     width: auto;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 /*navBar en Carré (Mobile iphone6) */
 .container__nav {
     display: flex;
+    justify-content: space-around;
     width: auto;
-    height: 200px;
+    height: 100%;
     margin-bottom: 10px;
+    padding: 10px;
     background: darkorange;
 }
+#container__colonneNav1, 
+#container__colonneNav2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#container__colonneNav1{
+    display: flex;
+    flex-direction: column;
+}
+#container__colonneNav2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 15px;
+}
+.block__intercalaireBox {
+    height: 100%;
+    width: 50px;
+    background-color: darkgrey;
+}
+.block__lienherhergements {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* compartiment container filtres & Recherche */
 .container__filtresRecherche{
     width: auto;
