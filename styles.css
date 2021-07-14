@@ -137,15 +137,73 @@ $color: .colorBleu;
 variables, functions & mixins en css non-sass */
 
 /* le Header navBar et filtres */
-
+header {
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+/*navBar en Carré (Mobile iphone6) */
+.container__nav {
+    display: flex;
+    width: auto;
+    height: 200px;
+    margin-bottom: 10px;
+    background: darkorange;
+}
+/* compartiment container filtres & Recherche */
+.container__filtresRecherche{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 /*Zone de Recherche */
 .container__Recherche {
     display : flex;
     flex-direction: row;
     align-items: center;
-    width: 400px;
-    height: 50px;
+    justify-content: flex-start;
+    width: auto;
+    height: 150px;
     margin-top: 20px;
+}
+.block__Recherche {
+    display : flex;
+    flex-direction : row;
+    width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:10px;
+    margin-right: 20px;
+}
+.element-iconMaps {
+    width: 70px;
+    height: 50px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    background: #f2f2f2;
+}
+.block__btnRecherche {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    background-color: #0065fc;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -20px;
+}
+.element-zoneRecherche {
+    width : 225px;
+    height: 50px;
+    border: .5px solid #f2f2f2;
+    font-weight: bold;
+    font-size: 18px;
 }
 /*les Filtres */
 
@@ -214,6 +272,7 @@ variables, functions & mixins en css non-sass */
     justify-content: center;
     align-items: center;
 }
+/* fin du header */
 
 /*Le grand container principal
  & ses enfants directs */
