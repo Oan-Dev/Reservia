@@ -138,10 +138,21 @@ variables, functions & mixins en css non-sass */
 
 /* le Header navBar et filtres */
 
-/*les Filtres */
-.container__filtres {
-    display: Block;
+/*Zone de Recherche */
+.container__Recherche {
+    display : flex;
+    flex-direction: row;
     align-items: center;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+}
+/*les Filtres */
+
+.container__filtres {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     margin-top: 50px;
     margin-bottom: 40px;
     margin-left: 10px;
@@ -149,6 +160,16 @@ variables, functions & mixins en css non-sass */
     width: 80%;
     height: 200px;
 }
+.block__filtreEcoFamille {
+    display: flex;
+    flex-direction: row;
+}
+.block__filtreRomantiqueAnimaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .block__filtreEco, 
 .block__filtreFamille,
 .block__filtreRomantique,
@@ -159,14 +180,16 @@ variables, functions & mixins en css non-sass */
     margin-right: 20px;
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 90%;
+    cursor: pointer;
+    font-weight: bold;
 }
-.element-filtresTexte--hover:hover > {
-    color: #0065FC;
-}
-.elements-filtresIcon--hover:hover > {
+.elements-filtresIcon--hover:hover {
     color: white;
     background-color: #0065FC;
+}
+.element-filtresTexte--hover:hover {
+    color: #0065FC;
 }
 .element-filtreIcons {
     margin-left: -2px;
@@ -219,27 +242,38 @@ variables, functions & mixins en css non-sass */
 /* Block les plus Populaires, 
    mode Etiquetage */
 .container__populaires {
-    height:650px;
+    height:700px;
     width: auto;
     margin-bottom: 60px;
-    padding: 5px;
+    padding: 5px 0;
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
+.block__populaires{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
 .Block__titre-populaires {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+.element-iconPopulaires {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
 .block__label-populaires {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 15px 5px;
 }
 
 .block__label-populaires {
