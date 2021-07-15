@@ -19,6 +19,19 @@ html, body {
 }
 /* format du contenu */
 
+/*Logo*/
+.block__logo {
+    width: 120px;
+    height: 55px;
+}
+.logoReservia {
+    background-image: url('./images/logo/Reservia.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 40px;
+}
+
 /*Herbergements Contenu & format du contenu */
 #imgHebergements1 {
     background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
@@ -139,7 +152,7 @@ variables, functions & mixins en css non-sass */
 /* le Header navBar et filtres */
 header {
     width: auto;
-    height: 600px;
+    height: 550px;
     display: flex;
     flex-direction: column;
 }
@@ -151,7 +164,7 @@ header {
     height: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    background: darkorange;
+    margin-top: 10px;
 }
 #container__colonneNav1, 
 #container__colonneNav2 {
@@ -167,16 +180,59 @@ header {
 #container__colonneNav2 {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 15px;
 }
 .block__intercalaireBox {
     height: 100%;
     width: 50px;
-    background-color: darkgrey;
 }
-.block__lienherhergements {
+.block__lienherhergements, .block__lienActivites {
+    display: flex;
+    justify-content: center;
+}
+.block__lienActivites{ 
+    margin-top: 30px;
+}
+.block__lienSincrire {
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.element-navGreyBorderLine {
+    border-top: 2px solid #f2f2f2;
+    width: 100%;
+    padding:10px;
+}
+.element-navBlueBorderLine {
+    border-top: 2px solid #0065fc;
+    width: 100%;
+    height: 2px;
+    padding:10px;
+}
+/*Zone Texte Accroche*/
+.container__texteaccroche {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+}
+.block__texteAccroche  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+.element-titreAccroche {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.element-titreAccroche p {
+    margin-top:10px;
+    font-size: 20px;
 }
 
 /* compartiment container filtres & Recherche */
@@ -193,7 +249,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     width: auto;
-    height: 150px;
+    height: 70px;
     margin-top: 20px;
 }
 .block__Recherche {
