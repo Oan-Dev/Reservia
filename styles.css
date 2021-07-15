@@ -249,7 +249,7 @@ nav a {
     align-items: center;
     justify-content: flex-start;
     width: auto;
-    height: 70px;
+    height: 50px;
     margin-top: 20px;
 }
 .block__Recherche {
@@ -295,12 +295,19 @@ nav a {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 10px;
     padding-right: 20px;
     width: 80%;
     height: 200px;
+}
+.block__titreFiltres{
+    margin-bottom: 20px;
+}
+.block__titreFiltres h3 {
+    font-weight: bold;
+    font-size: 18px;
 }
 .block__filtreEcoFamille {
     display: flex;
@@ -320,6 +327,7 @@ nav a {
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
+    margin-bottom:15px;
     display: flex;
     align-items: center;
     width: 90%;
@@ -356,6 +364,29 @@ nav a {
     justify-content: center;
     align-items: center;
 }
+.container__info {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left:20px;
+    margin-top: 20px;
+}
+.block__icon-info{
+    border-radius: 25px;
+    border: 2px solid #f2f2f2;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element-iconInfo {
+    color: #0065FC;
+}
+.element-info{
+    margin-left: 10px;
+}
 /* fin du header */
 
 /*Le grand container principal
@@ -363,8 +394,7 @@ nav a {
  .container__main {
      width: auto;
      height: auto;
-
-
+     margin-top: 90px;
  }
  .container__hebergements {
      height: auto;
