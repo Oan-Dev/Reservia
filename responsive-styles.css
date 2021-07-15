@@ -1,16 +1,84 @@
 /* @media mobiles*/
-@media screen and (min-width: 667px) and (max-width: 768px) {
+
+@media screen and (max-width: 667px) {
     
+    /*Zone de Recherche le mot est caché 
+    et l'icone apparaît*/
+    .element-motRecherche--hidden {
+        display: none;
+    }
+    .block__btnRecherche{
+        width: 50px;
+
+    }
+    .element-iconRecherche {
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 667px) and (max-width: 768px) {
+      /*Zone de Recherche le mot est caché 
+    et l'icone apparaît*/
+    .element-motRecherche--hidden {
+        display: none;
+    }
+    .block__btnRecherche{
+        width: 50px;
+
+    }
+    .element-iconRecherche {
+        width: 100%;
+        margin-left: 10px;
+    }
 }
 /* @media Tablettes */
 
 @media screen and (min-width: 768px) and (max-width: 1240px) {
-
+      /*Zone de Recherche le mot est visible 
+    et l'icone caché*/
+    #element-iconRecherche--hidden {
+        display: none;
+    }
+    .block__btnRecherche{
+        width: 100px;
+    }
+    .element-motRecherche {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 /* @media Tablette & petit pc */
 @media screen and (min-width: 1240px) and (max-width: 1600px) {
-
+      /*Zone de Recherche le mot est visible 
+    et l'icone caché*/
+    #element-iconRecherche--hidden {
+        display: none;
+    }
+    .block__btnRecherche{
+        width: 100px;
+    }
+    .element-motRecherche {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 /* @media Grand pc */
 
-@media screen and (min-width: 1600px)
+@media screen and (min-width: 1600px) {
+      /*Zone de Recherche le mot est visible 
+    et l'icone caché*/
+    #element-iconRecherche--hidden {
+        display: none;
+    }
+    .block__btnRecherche{
+        width: 100px;
+    }
+    .element-motRecherche {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

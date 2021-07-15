@@ -155,6 +155,7 @@ header {
     height: 550px;
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 /*navBar en Carré (Mobile iphone6) */
 .container__nav {
@@ -162,13 +163,12 @@ header {
     justify-content: space-around;
     width: auto;
     height: 100%;
-    margin-bottom: 10px;
     padding: 10px;
     margin-top: 10px;
 }
 #container__colonneNav1, 
 #container__colonneNav2 {
-    height: 100%;
+    height: 125px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -200,6 +200,7 @@ header {
 nav a {
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
 }
 .element-navGreyBorderLine {
     border-top: 2px solid #f2f2f2;
@@ -215,8 +216,8 @@ nav a {
 /*Zone Texte Accroche*/
 .container__texteaccroche {
     width: 100%;
-    height: 80px;
-    padding: 20px;
+    height: 70px;
+    padding: 0 20px 20px 20px;
 }
 .block__texteAccroche  {
     display: flex;
@@ -258,7 +259,7 @@ nav a {
     width: auto;
     padding-right: 20px;
     padding-left: 20px;
-    margin-left:10px;
+    margin-left:2px;
     margin-right: 20px;
 }
 .element-iconMaps {
@@ -295,9 +296,9 @@ nav a {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 40px;
-    margin-left: 10px;
+    margin-left: 5px;
     padding-right: 20px;
     width: 80%;
     height: 200px;
@@ -318,6 +319,11 @@ nav a {
     flex-direction: column;
     justify-content: center;
 }
+.block__filtreEcoFamille, 
+.block__filtreRomantiqueAnimaux {
+    width: 70%;
+    height: 100%;
+}
 
 .block__filtreEco, 
 .block__filtreFamille,
@@ -330,9 +336,12 @@ nav a {
     margin-bottom:15px;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 80%;
     cursor: pointer;
     font-weight: bold;
+}
+.block__filtreAnimaux{
+    width: 80%;
 }
 .elements-filtresIcon--hover:hover {
     color: white;
@@ -344,8 +353,8 @@ nav a {
 .element-filtreIcons {
     margin-left: -2px;
     border-radius: 25px;
-    width: 52px;
-    height: 52px;
+    width: 80px;
+    height: 54px;
     color: #0065FC;
     background-color: #deebff;
     text-align: center;
@@ -355,11 +364,13 @@ nav a {
 }
 
 .element-filtreTexte {
+    width: 70px;
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
     font-weight: bold;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,7 +405,7 @@ nav a {
  .container__main {
      width: auto;
      height: auto;
-     margin-top: 90px;
+     margin-top: 70px;
  }
  .container__hebergements {
      height: auto;
@@ -425,7 +436,7 @@ nav a {
     flex-direction: column;
 }
 .block__populaires{
-    height: auto;
+    height: 600px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -436,6 +447,7 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-weight: bold;
 }
 .element-iconPopulaires {
     display: flex;
@@ -461,7 +473,13 @@ nav a {
     padding-left: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.element-labelPopulaires h3 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
 }
 .element-labelPopulaires h3,
 .element-labelPopulaires p,
@@ -484,6 +502,9 @@ nav a {
     width: 90%;
     margin-top: 10px;
     padding-left: 5%;
+   }
+   .element-labelHebergements h3 {
+       font-weight: bold;
    }
    .element-labelHebergements h3, 
    .element-labelHebergements p, 
@@ -509,8 +530,8 @@ nav a {
     border-radius: 15px;
   }
   .element-sizeTitreActivites {
-      height: 50px;
-      margin-left: 10px;
+      height: 40px;
+      margin-left: 20px;
       border-radius: 15px;
       display: flex;
       align-items: center;
@@ -520,7 +541,7 @@ nav a {
 .Container__down {
     display: block;
     bottom: 0;
-    height: 65vh;
+    height: 70vh;
     margin-top: 20px;
     padding: 20px;
     background-color: #f2f2f2;
@@ -534,8 +555,8 @@ ul li {
 }
 
 footer h4 {
-    margin-top: 10px;
+    margin-top: 35px;
     margin-bottom: 15px;
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
