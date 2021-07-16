@@ -191,6 +191,9 @@ header {
 .block__lienActivites{ 
     margin-top: 25px;
 }
+.element-lienActivites{
+    color: black;
+}
 .block__lienSincrire {
     display: flex;
     justify-content: flex-end;

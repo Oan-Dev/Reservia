@@ -57,26 +57,251 @@
 }
 /* @media Tablette & petit pc */
 @media screen and (min-width: 1240px) and (max-width: 1600px) {
-      /*Zone de Recherche le mot est visible 
-    et l'icone caché*/
-    #element-iconRecherche--hidden {
-        display: none;
-    }
-    .block__btnRecherche{
-        width: 100px;
-    }
-    .element-motRecherche {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+   /* Zone header */  
+   header {
+    width: 100%;
+    margin-left: 10px;
+}
+/*navBar*/
+.container__nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+#container__colonneNav1, 
+#container__colonneNav2 {
+    display: flex;
+    flex-direction: row;
+}
+.element-navGreyBorderLine,
+.element-navBlueBorderLine {
+    display: none;
+}
+#container__colonneNav1 {
+    flex-grow: 3;
+} 
+
+#container__colonneNav2 {
+    justify-content: space-around;
+    padding-right: 50px;
+    flex-shrink: 3;
+}
+.container__navActivites {
+    height: 30%;
+    margin-top: 2px;
+}
+.container__navSincrire {
+    padding-top: 15px;
+}
+.block__lienherhergements {
+    padding: 25px;
+    border-top: 2px solid #0065fc;
+}
+.block__logo {
+    width: 150px;
+    height: 65px;
+}
+.logoReservia {
+    width: 130px;
+    height: 50px;
+}
+
+/*Zone de Recherche le mot est visible 
+et l'icone caché*/
+
+.container__Recherche{
+    margin-bottom: 20px;
+}
+#element-iconRecherche--hidden {
+    display: none;
+}
+.block__btnRecherche{
+    width: 100px;
+}
+.element-motRecherche {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* zone filtres mode ligne */
+.container__filtres{
+    margin-left: 20px;
+    height: 50%;
+}
+.container__filtres, 
+.block__filtreRomantiqueAnimaux {
+    display: flex;
+    flex-direction: row;
+}
+.block__filtreEcoFamille,
+.block__filtreRomantiqueAnimaux {
+    margin-top: 10px;
+}
+.block__filtreEcoFamille {
+    margin-left: 30px;
+}
+.block__titreFiltres{
+    margin-top: 20px;
+}
+.container__info{
+    margin-top: -10px;
+}
+/* le container principal */
+.container__main {
+    width: 97%;
+    margin-top : -90px;
+    margin-left: 10px;
+}
+.container__hebergements {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* les populaires */
+.container__populaires {
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 15px;
+    padding: 0 50px 0 50px;
+    
+}
+.block__populaires {
+    margin-bottom:20px;
+}
+.Block__titre-populaires{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+/* les hebergements */
+.block__hebergements {
+    flex: 2;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 0 50px 0 50px;
+}
+#block1__hebergements,
+#block2__hebergements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.titrePrincipaux {
+    margin-top: 40px;
+}
+
+/* Les activites */
+.container__activites {
+    width: 100%;
+}
+#titreActivitesBox{
+    margin-left: 20px;
+}
+.block-container__Activites {
+    display: flex;
+    flex-direction: row;
+}
+.block__activites {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.block__labelActivites {
+    width: 50%;
+    height: cover;
+}
+.block__labelActivites2356 {
+    width: 50%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#imgActivites1, #imgActivites4 {
+    height: 480px;
+}
+
+/*le footer */
+.Container__down {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+}
+.container__listFooter {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+footer h4 {
+    margin-bottom: 30px;    
+}
+footer ul li {
+    margin-bottom: 20px;
+}
 }
 /* @media Grand pc */
 
 @media screen and (min-width: 1600px) {
     /* Zone header */  
+    header {
+        width: 100%;
+        margin-left: 10px;
+    }
+    /*navBar*/
+    .container__nav {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+    #container__colonneNav1, 
+    #container__colonneNav2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .element-navGreyBorderLine,
+    .element-navBlueBorderLine {
+        display: none;
+    }
+    #container__colonneNav1 {
+        flex-grow: 3;
+    } 
+
+    #container__colonneNav2 {
+        justify-content: space-around;
+        padding-right: 50px;
+        flex-shrink: 3;
+    }
+    .container__navActivites {
+        height: 30%;
+        margin-top: 2px;
+    }
+    .container__navSincrire {
+        padding-top: 15px;
+    }
+    .block__lienherhergements {
+        padding: 25px;
+        border-top: 2px solid #0065fc;
+    }
+    .block__logo {
+        width: 150px;
+        height: 65px;
+    }
+    .logoReservia {
+        width: 130px;
+        height: 50px;
+    }
+
     /*Zone de Recherche le mot est visible 
     et l'icone caché*/
+
     .container__Recherche{
         margin-bottom: 20px;
     }
@@ -111,10 +336,14 @@
     .block__titreFiltres{
         margin-top: 20px;
     }
+    .container__info{
+        margin-top: -10px;
+    }
     /* le container principal */
     .container__main {
-        width: 100%;
-        margin-top : -20px;
+        width: 97%;
+        margin-top : -90px;
+        margin-left: 10px;
     }
     .container__hebergements {
         width: 100%;
@@ -132,6 +361,11 @@
     .block__populaires {
         margin-bottom:20px;
     }
+    .Block__titre-populaires{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
     /* les hebergements */
     .block__hebergements {
         flex: 2;
@@ -147,14 +381,16 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    .block__label-hebergement {
-    
+    .titrePrincipaux {
+        margin-top: 40px;
     }
 
     /* Les activites */
     .container__activites {
         width: 100%;
-
+    }
+    #titreActivitesBox{
+        margin-left: 20px;
     }
     .block-container__Activites {
         display: flex;
@@ -180,9 +416,11 @@
     #imgActivites1, #imgActivites4 {
         height: 480px;
     }
+    
     /*le footer */
     .Container__down {
         width: 100%;
+        height: 35vh;
         display: flex;
         flex-direction: row;
     }
