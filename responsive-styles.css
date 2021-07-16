@@ -3,9 +3,11 @@
 @media screen and (max-width: 667px) {
     /*le body */
     body {
-        width: 80%;
+        width: 100%;
 
     }
+    /*le header */
+
     /*Zone de Recherche le mot est caché 
     et l'icone apparaît*/
     .element-motRecherche--hidden {
