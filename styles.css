@@ -427,7 +427,7 @@ nav a {
 /* Block les plus Populaires, 
    mode Etiquetage */
 .container__populaires {
-    height:700px;
+    height:750px;
     width: auto;
     margin-bottom: 60px;
     padding: 5px 0;
@@ -437,7 +437,7 @@ nav a {
     flex-direction: column;
 }
 .block__populaires{
-    height: 600px;
+    height: 700px;
     width: auto;
     display: flex;
     flex-direction: column;
