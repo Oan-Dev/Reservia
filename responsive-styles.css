@@ -191,6 +191,12 @@
         display: flex;
         justify-content: space-between;
         margin-left: 20px;
+    }
 
+    footer h4 {
+        margin-bottom: 30px;    
+    }
+    footer ul li {
+        margin-bottom: 20px;
     }
 }
