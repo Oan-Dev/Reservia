@@ -151,7 +151,7 @@ et l'icone caché*/
 .container__main {
     width: 97%;
     height: 1550px;
-    margin-top : -90px;
+    margin-top : -120px;
     margin-left: 10px;
 }
 .container__hebergements {
@@ -165,7 +165,7 @@ et l'icone caché*/
     margin-left: 20px;
     border-radius: 15px;
     padding: 0 50px 0 50px;
-    height: 790px;
+    height: 820px;
 }
 .block__populaires {
     margin-bottom:20px;
@@ -186,8 +186,8 @@ et l'icone caché*/
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 0 25px 0 25px;
-    height: 790px;
-    width: max-border;
+    height: 820px;
+    width: 80%;
 }
 #block1__hebergements,
 #block2__hebergements {
@@ -200,8 +200,9 @@ et l'icone caché*/
     margin-top: 40px;
 }
 .block__label-hebergements {
-    width: 80%;
-    height: 80%;
+    width: 150px;
+    height: auto;
+
 }
 
 /* Les activites */
