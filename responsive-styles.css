@@ -64,8 +64,9 @@
     .container__populaires {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: auto;
+        flex: 1;
+        width: 1025px;
+        height: 250px;
         border-radius: 15px;
     }
     .block__populaires {
@@ -80,14 +81,16 @@
         padding: 0 20px 0 20px;
     }
     .block__label-populaires {
-        width: 300px;
-        height: auto;
+        width: 320px;
+        height: 120px;
+        padding: 20px 0 20px 0;
     }
     /* Zone block hebergements */
     .block__hebergements {
         width: 100%;
         display: flex;
         flex-direction: column;
+        flex: 2;
         background-color: #f2f2f2;
         border-radius: 15px;
         height: 750px;
@@ -99,11 +102,62 @@
         justify-content: space-around;
     }
     .block__label-hebergements { 
-        width: 300px;
+        width: 250px;
         height: auto;
     }
-    /*Zone Activites */
+    /* Les activites */
+    .container__activites {
+    width: 100%;
+    margin-top: -40px;
+    }
+    #titreActivitesBox{
+    margin-left: 20px;
+    }
+    .block-container__Activites {
+        display: flex;
+        flex-direction: column;
+    }
+    .block__activites {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .block__labelActivites {
+        width: 50%;
+        height: cover;
+    }
+    .block__labelActivites2356 {
+        width: 50%;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #imgActivites1, #imgActivites4 {
+        height: 480px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .Container__down {
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .container__listFooter {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
     
+    footer h4 {
+        margin-bottom: 30px;    
+    }
+    footer ul li {
+        margin-bottom: 20px;
+    }
 }
 /* @media Tablette & petit pc */
 @media screen and (min-width: 1240px) and (max-width: 1600px) {
