@@ -339,13 +339,14 @@ nav a {
     margin-bottom:15px;
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 200px;
     cursor: pointer;
     font-weight: bold;
 }
-.block__filtreAnimaux{
-    width: 80%;
+#block__filtreAnimaux{
+    width:250px;
 }
+
 .elements-filtresIcon--hover:hover {
     color: white;
     background-color: #0065FC;

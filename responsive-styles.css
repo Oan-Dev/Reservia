@@ -49,6 +49,8 @@
     .container__nav {
         width: 97%;
     }
+
+    /* Zone filtres */
     .block__texteAccroche {
         align-items: center;
     }
@@ -67,11 +69,17 @@
     .block__filtreEcoFamille, 
     .block__filtreRomantiqueAnimaux {
         margin-left: 20px;
+        justify-content: flex-start;
     }
     .container__info {
         margin-top: -20px;
     }
-    
+    .block__titreFiltres {
+        margin-left: 20px;
+    }
+    .container__info {
+        margin-left : 25px;
+    }
     /*Zone de Recherche le mot est visible 
     et l'icone caché*/
     #element-iconRecherche--hidden {
@@ -276,6 +284,10 @@ et l'icone caché*/
 .container__filtres{
     margin-left: 20px;
     height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content :flex-start;
+    align-items: flex-start;
 }
 .container__filtres, 
 .block__filtreRomantiqueAnimaux {
@@ -294,6 +306,12 @@ et l'icone caché*/
 }
 .container__info{
     margin-top: -10px;
+}
+.block__filtreEcoFamille {
+    width: 80%;
+}
+.block__filtreRomantiqueAnimaux{
+    justify-content: flex-start;
 }
 /* le container principal */
 .container__main {
@@ -498,6 +516,10 @@ footer ul li {
     .container__filtres{
         margin-left: 20px;
         height: 50%;
+        width: 50%;
+        display: flex;
+        justify-content :flex-start;
+        align-items: flex-start;
     }
     .container__filtres, 
     .block__filtreRomantiqueAnimaux {
@@ -516,6 +538,12 @@ footer ul li {
     }
     .container__info{
         margin-top: -10px;
+    }
+    .block__filtreEcoFamille {
+        width: 80%;
+    }
+    .block__filtreRomantiqueAnimaux{
+        justify-content: flex-start;
     }
     /* le container principal */
     .container__main {
