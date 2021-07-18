@@ -1,0 +1,572 @@
+* { 
+    margin:0;
+    padding:0;
+}
+/* GENERAL */
+/* Fonts Family, Caractère de Police */
+/* Important de Fonts */
+    @font-face {
+        font-family: "raleway";
+        src: url("./fonts/raleway/Raleway-Light.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-Bold.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-ExtraBold.ttf") format("ttf");
+        src: url("./fonts/raleway/Raleway-Regular.ttf") format("ttf");
+    }
+
+/* Fonts dans Body */
+html, body {
+    font-family: raleway, 'Tangerine', Arial, 'Times New Roman', Helvetica, sans-serif;
+}
+h3, h4, .element-filtreTexte {
+    font-weight: ExtraBold 900;
+}
+
+/* format du contenu */
+
+/*Logo*/
+.block__logo {
+    width: 120px;
+    height: 55px;
+}
+.logoReservia {
+    background-image: url('./images/logo/Reservia.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 40px;
+}
+
+/*Herbergements Contenu & format du contenu */
+#imgHebergements1 {
+    background-image: url('./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg') ;
+}
+
+#imgHebergements2 {
+    background-image: url('./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg') ;
+}
+#imgHebergements3 {
+    background-image: url('./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg') ;
+}
+#imgHebergements4 {
+    background-image: url('./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg') ;
+}
+#imgHebergements5 {
+    background-image: url('./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg') ;
+}
+#imgHebergements6 {
+    background-image: url('./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg') ;
+}
+
+.element-ImgHebergements {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* Les plus populaires  Contenu & format du contenu */
+#imgPopulaires1 {
+    background-image: url('./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg') ;
+}
+#imgPopulaires2 {
+    background-image: url('./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg') ;
+}
+#imgPopulaires3 {
+    background-image: url('./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg') ;
+}
+
+.element-ImgPopulaires {
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 160px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* Les Activités Contenu & format du contenu */
+#imgActivites1 {
+    background-image: url('./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg') ;
+}
+#imgActivites2 {
+    background-image: url('./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg') ;
+}
+#imgActivites3 {
+    background-image: url('./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg') ;
+}
+#imgActivites4 {
+    background-image: url('./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg') ;
+}
+#imgActivites5 {
+    background-image: url('./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg') ;
+}
+#imgActivites6 {
+    background-image: url('./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg') ;
+}
+
+.element-ImgActivites {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+.hauteurTitre {
+    height: 70px;
+}
+.titreActivites {
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+    padding-left : 5%;
+    width : 95%;
+}
+
+/* fin format du contenu */
+
+/* Couleurs */
+.colorBleu {
+    color: #0065fc;
+}
+.colorBleuClair {
+    color: #deebff;
+}
+.colorGris {
+    color: #f2f2f2;
+}
+
+.backBleu {
+    background-color: #0065fc;
+}
+.backBleuClair {
+    background-color: #deebff;
+}
+.backGris {
+    background-color: #f2f2f2;
+}
+.colorLien2 {
+    color: black;
+}
+
+/*$color: .colorBleu;*/ 
+/*Voir si possible instauration de 
+variables, functions & mixins en css non-sass */
+
+/* le Header navBar et filtres */
+header {
+    width: auto;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+/*navBar en Carré (Mobile iphone6) */
+.container__nav {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+#container__colonneNav1, 
+#container__colonneNav2 {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#container__colonneNav1{
+    display: flex;
+    flex-direction: column;
+}
+#container__colonneNav2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.block__intercalaireBox {
+    height: 100%;
+}
+.block__lienherhergements, .block__lienActivites {
+    display: flex;
+    justify-content: center;
+}
+.block__lienActivites{ 
+    margin-top: 25px;
+}
+.element-lienActivites{
+    color: black;
+}
+.block__lienSincrire {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.element-navGreyBorderLine {
+    border-top: 2px solid #f2f2f2;
+    width: 100%;
+    padding:10px;
+    margin-bottom: 2px;
+}
+.element-navBlueBorderLine {
+    border-top: 2px solid #0065fc;
+    width: 100%;
+    height: 2px;
+    padding:10px;
+}
+/*Zone Texte Accroche*/
+.container__texteaccroche {
+    width: 90%;
+    height: 70px;
+    padding: 0 20px 20px 20px;
+}
+.block__texteAccroche  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+.element-titreAccroche {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.element-titreAccroche p {
+    margin-top:10px;
+    font-size: 20px;
+}
+
+/* compartiment container filtres & Recherche */
+.container__filtresRecherche{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/*Zone de Recherche */
+.container__Recherche {
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: 50px;
+    margin-top: 20px;
+}
+.block__Recherche {
+    display : flex;
+    flex-direction : row;
+    width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left:2px;
+    margin-right: 20px;
+}
+.element-iconMaps {
+    width: 70px;
+    height: 50px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    background: #f2f2f2;
+}
+.block__btnRecherche {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+    color: #fff;
+    background-color: #0065fc;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -20px;
+}
+.element-zoneRecherche {
+    width : 225px;
+    height: 50px;
+    border: .5px solid #f2f2f2;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*les Filtres */
+
+.container__filtres {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    padding-right: 20px;
+    width: 75%;
+    height: 200px;
+}
+.block__titreFiltres{
+    margin-bottom: 20px;
+}
+.block__titreFiltres h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.block__filtreEcoFamille {
+    display: flex;
+    flex-direction: row;
+}
+.block__filtreRomantiqueAnimaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block__filtreEcoFamille, 
+.block__filtreRomantiqueAnimaux {
+    width: 70%;
+    height: 100%;
+}
+
+.block__filtreEco, 
+.block__filtreFamille,
+.block__filtreRomantique,
+.block__filtreAnimaux {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom:15px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#block__filtreAnimaux{
+    width:250px;
+}
+
+.elements-filtresIcon--hover:hover {
+    color: white;
+    background-color: #0065FC;
+}
+.element-filtresTexte--hover:hover {
+    color: #0065FC;
+}
+.element-filtreIcons {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 54px;
+    height: 54px;
+    color: #0065FC;
+    background-color: #deebff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-filtreTexte {
+    width: 70px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__info {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left:20px;
+    margin-top: 20px;
+}
+.block__icon-info{
+    border-radius: 25px;
+    border: 2px solid #f2f2f2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+.element-iconInfo {
+    color: #0065FC;
+}
+.element-info{
+    margin-left: 10px;
+}
+
+/* fin du header */
+
+/*Le grand container principal
+ & ses enfants directs */
+ .container__main {
+     width: auto;
+     height: auto;
+     margin-top: 70px;
+ }
+ .container__hebergements {
+     height: auto;
+     width: auto;
+     margin: 5px 5px;
+     padding: 50px 5px;
+
+ }
+ .top-block__hebergements {
+     height: auto;
+     margin-bottom:5px;
+     padding: 35px 5px;
+ }
+ .container__activites {
+     width: 95%;
+     padding: 10px;
+ }
+/* Block les plus Populaires, 
+   mode Etiquetage */
+.container__populaires {
+    height:750px;
+    width: auto;
+    margin-bottom: 60px;
+    padding: 5px 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.block__populaires{
+    height: 700px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.Block__titre-populaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.element-iconPopulaires {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.block__label-populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.block__label-populaires {
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+    margin: 5px;
+}
+.element-labelPopulaires {
+    width: 60%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.element-labelPopulaires h3 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+.element-labelPopulaires h3,
+.element-labelPopulaires p,
+.element-labelPopulaires div {
+   margin-bottom: 20px;
+}
+
+/* Block Hebergements, 
+   mode etiquetage*/
+   .block__label-hebergements {
+    width: 95%;
+    height: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+   }
+   .element-labelHebergements {
+    width: 90%;
+    margin-top: 10px;
+    padding-left: 5%;
+   }
+   .element-labelHebergements h3 {
+       font-weight: bold;
+   }
+   .element-labelHebergements h3, 
+   .element-labelHebergements p, 
+   .element-labelHebergements div {
+    margin: 5px;
+}
+
+/* Block Activites, 
+   mode etiquetage*/
+   .block__labelActivites,
+   .element-labelActivites2356 {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+  .element-labelActivites {
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  .element-sizeTitreActivites {
+      height: 40px;
+      margin-left: 20px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+  }
+
+/* le footer */
+.Container__down {
+    display: block;
+    bottom: 0;
+    height: 80vh;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+ul {
+    margin-bottom: 25px;
+}
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer h4 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
