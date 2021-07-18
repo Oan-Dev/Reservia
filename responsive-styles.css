@@ -45,6 +45,32 @@
     html {
         width: 100%;
     }
+    /* navBar*/
+    .container__nav {
+        width: 97%;
+    }
+    .block__texteAccroche {
+        align-items: center;
+    }
+    .container__Recherche {
+        justify-content: center;
+    }
+    .container__filtres {
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+    }
+    .block__filtreRomantiqueAnimaux {
+        display: flex;
+        flex-direction: row;
+    }
+    .block__filtreEcoFamille, 
+    .block__filtreRomantiqueAnimaux {
+        margin-left: 20px;
+    }
+    .container__info {
+        margin-top: -20px;
+    }
     
     /*Zone de Recherche le mot est visible 
     et l'icone caché*/
@@ -64,6 +90,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-top: -20px;
     }
     /*Zone populaires*/
     .container__populaires {
