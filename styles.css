@@ -17,6 +17,10 @@
 html, body {
     font-family: raleway, 'Tangerine', Arial, 'Times New Roman', Helvetica, sans-serif;
 }
+h3, h4, .element-filtreTexte {
+    font-weight: ExtraBold 900;
+}
+
 /* format du contenu */
 
 /*Logo*/
