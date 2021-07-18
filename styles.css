@@ -356,7 +356,7 @@ nav a {
 .element-filtreIcons {
     margin-left: -2px;
     border-radius: 25px;
-    width: 80px;
+    width: 54px;
     height: 54px;
     color: #0065FC;
     background-color: #deebff;
@@ -390,10 +390,11 @@ nav a {
     border-radius: 25px;
     border: 2px solid #f2f2f2;
     width: 30px;
-    height: 25px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
 }
 .element-iconInfo {
     color: #0065FC;
