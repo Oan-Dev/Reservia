@@ -24,19 +24,65 @@
 }
 
 @media screen and (min-width: 667px) and (max-width: 768px) {
-      /*Zone de Recherche le mot est caché 
+      /* navBar*/
+    .container__nav {
+        width: 97%;
+    }
+
+    /*Zone de Recherche le mot est caché 
     et l'icone apparaît*/
     .element-motRecherche--hidden {
         display: none;
     }
     .block__btnRecherche{
         width: 50px;
-
     }
     .element-iconRecherche {
         width: 100%;
         margin-left: 10px;
+    }  
+      /* les filtres */
+    .container__Recherche {
+        justify-content: center;
     }
+    .container__texteaccroche{
+        width: 97%;
+    }
+    .block__texteAccroche{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__filtres {
+        margin-left: 20px;
+    }
+    .block__filtreRomantiqueAnimaux {
+        display: flex;
+        flex-direction: row;
+    }
+    .container__info {
+        margin-top: -20px;
+    }
+    /*Container main */
+    .container__main {
+    margin-top: -15px;      
+    }
+    .container__populaires {
+        border-radius: 15px;
+    }
+    .Block__titre-populaires {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px 0 20px;
+    }
+    footer {
+        width: 97%;
+    }
+    .container__listFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     }
 }
 /* @media Tablettes */
 
