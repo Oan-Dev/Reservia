@@ -8,134 +8,129 @@
     <!-- Titre onglet -->
     <title>Reservia, votre hébergements pour vos vacances de rêve</title>
     <!-- Feuille de Styles + Fonts "icones + font-family-->
-    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive-styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
-    <!-- navBar Version 3 -->
-    <Section id="navContainerBox">
-        <nav id="navBox3">
+    <header>
+        <!-- navbar + logo -->
+        <nav class="container__nav">
             <!-- Colonne Logo + Hébergements + Bordure bleu -->
-            <div id="navCol1">
-                <div id="logoContainer">
-                    <div id="navLogoBox1" class="sizeNavContainer flexNavBox">
-                        <div id="boiteLogo" class="sizeNavBox flexNavBox">
-                            <img id="logoReservia" src="./images/logo/Reservia.svg" alt="Logo Reservia" />
-                        </div>
-                    </div>
+            <div id="container__colonneNav1">
+                <div class="block__logo">
+                    <div class="logoReservia" title="Reservia"></div>
                 </div>
-                <div id="navHebContainer" class="sizeNavBox flexNavBox">
-                    <div id="hebContainer" class="sizeNavBox flexNavBox">
-                        <div id="lienHebBox1" class="sizeNavBox flexNavBox">
-                            <a id="LienHeb" class="colorBleu decorationNone" href="#">Hébergements</a>
-                        </div>
-                    </div>
+                <div class="block__lienherhergements">
+                    <a class="element-lienHebergements" href="#lienHebergements">Hébergements</a>
                 </div>
-                <div id="navBlueBorderLine"></div>
+                <div class="element-navBlueBorderLine"></div>
             </div>
-            <div id="intercalaireBox1"></div>
+            <div class="block__intercalaireBox"></div>
             <!-- Colonne Activites + Sincrire + Bordure Grise -->
-            <div id="intercalaireBox2"></div>
-            <div id="navCol2">
-                <div id="navGreyBorderLine"></div>
-                <div id="navActivitesContainer" class="sizeNavContainer flexNavBox">
-                    <div id="ActivitesBox1" class="sizeNavBox flexNavBox">
-                        <a id="LienActivites" class="colorLien2 decorationNone" href="#">Activités</a>
+            <div class="block__intercalaireBox"></div>
+            <div id="container__colonneNav2">
+                <div class="element-navGreyBorderLine"></div>
+                <div class="container__navActivites">
+                    <div class="block__lienActivites">
+                        <a class="element-lienActivites" href="#lienactivites">Activités</a>
                     </div>
                 </div>
-                <div id="navSincrireContainer" class="sizeNavContainer flexNavBox">
-                    <div id="navSincrireBox1" class="sizeNavBox flexNavBox">
-                        <a id="LienSincrire" class="colorBleu decorationNone" href="#">S'inscrire</a>
+                <div class="container__navSincrire">
+                    <div id="block__lienSincrire" class="block__lienSincrire">
+                        <a class="element-lienSincrire" href="#">S'inscrire</a>
                     </div>
                 </div>
             </div>
         </nav>
-
-    </Section>
-    <!-- Fin section navBar version 3 -->
-
-    <!-- Format Header pour la section de recherche & filtres -->
-    <header>
-        <div id="texteAccroche">
-            <h1 class="texteGras">Trouvez votre hébergements pour vos vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+        <!-- texte Accroche d'invitation -->
+        <div class="container__texteaccroche">
+            <div class="block__texteAccroche">
+                <h1 class="element-titreAccroche">Trouvez votre hébergements pour vos vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
         </div>
-
-        <!-- Container de Recherche -->
-        <Section id="searchBloc">
-            <div id="searchBox">
-                <div id="MapIconSearch" class="backGris">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div>
-                    <input id="zoneRecherche" type="search" value="Marseille, France">
-                </div>
-                <div id="buttonSearch" class="backBleu">
-                    <i id="iconRecherche" class="fas fa-search fa-lg"></i>
-                    <p id="motRecherche" class="IconOuMot">Rechercher</p>
+        <!-- Container de la Zone Recherche & des filtres -->
+        <div class="container__filtresRecherche">
+            <!-- Container Zone de Recherche -->
+            <div class="container__Recherche">
+                <div class="block__Recherche">
+                    <div class="element-iconMaps">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <input class="element-zoneRecherche" type="search" value="Marseille, France">
+                    </div>
+                    <div class="block__btnRecherche">
+                        <i id="element-iconRecherche--hidden" class="fas fa-search fa-lg element-iconRecherche element-iconRecherche--hidden"></i>
+                        <p class="element-motRecherche element-motRecherche--hidden">Rechercher</p>
+                    </div>
                 </div>
             </div>
-        </Section>
 
-        <!-- Conatiners filtres -->
-        <div id="filtre" class="margFiltre">
-            <div id="titreFiltres" class="margFiltreTitre">
-                <h3>Filtres</h3>
-            </div>
-            <section id="filtreEcoFamille">
-                <div id="filtreEco" class="filtreTexteIcons">
-                    <div class="filtreIcons">
-                        <i class="fas fa-money-bill-wave fa-lg"></i>
-                    </div>
-                    <div class="filtreTexte">Economique</div>
+            <!-- Container Filtres -->
+            <div class="container__filtres">
+                <div class="block__titreFiltres">
+                    <h3>Filtres</h3>
                 </div>
-                <div id="filtreFamille" class="filtreTexteIcons">
-                    <div class="filtreIcons">
-                        <i class="fas fa-child fa-lg"></i>
-                    </div>
-                    <div class="filtreTexte">Familial</div>
-                </div>
-            </section>
-            <Section id="filtreRomantiqueAnimaux">
-                <div id="filtreRomantique" class="filtreTexteIcons">
-                    <div class="filtreIcons">
-                        <i class="fas fa-heart fa-lg"></i>
-                    </div>
-                    <div class="filtreTexte">Romantique</div>
-                </div>
-                <div id="filtreAnimaux" class="filtreTexteIcons">
-                    <div class="filtreIcons">
-                        <i class="fas fa-dog fa-lg"></i>
-                    </div>
-                    <div class="filtreTexte">Animaux domestiques</div>
-                </div>
-            </Section>
-        </div>
 
-        <!-- Container de la barre d'info -->
-        <div id="info">
-            <div class="parentIcon">
-                <i class="fas fa-info colorBleu"></i>
+                <!-- Block 1 pour layout en carré -->
+                <div class="block__filtreEcoFamille">
+                    <div class="block__filtreEco">
+                        <div class="element-filtreIcons elements-filtresIcon--hover">
+                            <i class="fas fa-money-bill-wave fa-lg"></i>
+                        </div>
+                        <div class="element-filtresTexte--hover">Economique</div>
+                    </div>
+                    <div class="block__filtreFamille">
+                        <div class="element-filtreIcons elements-filtresIcon--hover">
+                            <i class="fas fa-child fa-lg"></i>
+                        </div>
+                        <div class="element-filtreTexte element-filtresTexte--hover">Familial</div>
+                    </div>
+                </div>
+
+                <!-- block 2 pour layout en carré -->
+                <div class="block__filtreRomantiqueAnimaux">
+                    <div class="block__filtreRomantique">
+                        <div class="element-filtreIcons elements-filtresIcon--hover">
+                            <i class="fas fa-heart fa-lg"></i>
+                        </div>
+                        <div class="element-filtreTexte element-filtresTexte--hover">Romantique</div>
+                    </div>
+                    <div id="block__filtreAnimaux" class="block__filtreAnimaux">
+                        <div id="element-iconFiltreAnimaux" class="element-filtreIcons elements-filtresIcon--hover">
+                            <i class="fas fa-dog fa-lg"></i>
+                        </div>
+                        <div id="element-filtreAnimaux" class="element-filtreTexte element-filtresTexte--hover">Animaux domestiques</div>
+                    </div>
+                </div>
             </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <!-- Container de la barre d'info -->
+            <div class="container__info">
+                <div class="block__icon-info">
+                    <i class="fas fa-info element-iconInfo"></i>
+                </div>
+                <p class="element-info">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </div>
     </header>
-
-    <!-- Format containers & elements "Commercial objects" -->
-    <!-- Container des Populaires -->
-    <section id="productBox">
-        <section id="populairesBox" class="backGris">
-            <div class="sizePopulaires blocPopulaires backGris">
-                <div id="titrePopulaires">
-                    <h2 class="texteGras">Les plus populaires</h2>
-                    <div><i class="fas fa-chart-line fa-lg"></i></div>
+    <!-- Container des Populaires-->
+    <div class="container__main">
+        <div class="container__hebergements">
+            <div class="container__populaires">
+                <div class="Block__titre-populaires">
+                    <h2> Les plus populaires</h2>
+                    <div class="element-iconPopulaires">
+                        <i class="fas fa-chart-line fa-lg"></i>
+                    </div>
                 </div>
-                <div id="GroupePopulairesBox">
-                    <div id="populaires1Box" class="cubePopulaires blocPopulaires12">
-                        <div id="imgPopulaires1" class="formatImgPopulaires"></div>
-                        <div class="cubeDetailsPopulaires">
+                <div class="block__populaires">
+                    <div class="block__label-populaires">
+                        <div id="imgPopulaires1" class="element-ImgPopulaires"></div>
+                        <div class="element-labelPopulaires">
                             <h3>Hôtel le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
                             <div>
@@ -147,9 +142,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="populaires2Box" class="cubePopulaires blocPopulaires12">
-                        <div id="imgPopulaires2" class="formatImgPopulaires"></div>
-                        <div class="cubeDetailsPopulaires">
+                    <div class="block__label-populaires">
+                        <div id="imgPopulaires2" class="element-ImgPopulaires"></div>
+                        <div class="element-labelPopulaires">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71€</p>
                             <div>
@@ -161,9 +156,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="populaires3Box" class="cubePopulaires">
-                        <div id="imgPopulaires3" class="formatImgPopulaires"></div>
-                        <div class="cubeDetailsPopulaires">
+                    <div class="block__label-populaires">
+                        <div id="imgPopulaires3" class="element-ImgPopulaires"></div>
+                        <div class="element-labelPopulaires">
                             <h3>Hôtel Tout Bleu et Blanc</h3>
                             <p>Nuit à partir de 68€</p>
                             <div>
@@ -177,18 +172,16 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- container les Hebergements -->
-        <section id="hebergementsBox">
-            <div class="sizeHebergements blocHebergements">
+            <!-- Container des hebergements -->
+            <div id="lienHebergements" class="block__hebergements">
                 <h2 class="titrePrincipaux">Hébergements à Marseille</h2>
 
                 <!-- Format Premiere ligne -->
-                <div id="bloc1">
-                    <div class="cubeHebergements">
-                        <div id="imgHebergements1" class="formatImgHebergements"></div>
-                        <div class="cubeDetailsHebergements">
+                <div id="block1__hebergements" class="top-block__hebergements">
+                    <div class="block__label-hebergements">
+                        <div id="imgHebergements1" class="element-ImgHebergements"></div>
+                        <div class="element-labelHebergements">
                             <h3>Auberge de la Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
                             <div>
@@ -200,11 +193,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cubeHebergements">
-                        <div id="imgHebergements2" class="formatImgHebergements"></div>
-                        <div class="cubeDetailsHebergements">
+                    <div class="block__label-hebergements">
+                        <div id="imgHebergements2" class="element-ImgHebergements"></div>
+                        <div id="element-labelHebergement2" class="element-labelHebergements">
                             <h3>Hôtel du Port</h3>
-                            <p>Nuit à partir de 52€</p>
+                            <p id="element-paragraphe__hebergement2">Nuit à partir de 52€</p>
                             <div>
                                 <i class="fas fa-star colorBleu"></i>
                                 <i class="fas fa-star colorBleu"></i>
@@ -214,9 +207,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cubeHebergements">
-                        <div id="imgHebergements3" class="formatImgHebergements"></div>
-                        <div class="cubeDetailsHebergements">
+                    <div class="block__label-hebergements">
+                        <div id="imgHebergements3" class="element-ImgHebergements"></div>
+                        <div id="element-labelHebergement3" class="element-labelHebergements">
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
                             <div>
@@ -231,10 +224,10 @@
                 </div>
 
                 <!-- Format seconde ligne -->
-                <div id="bloc2">
-                    <div class="cubeHebergements">
-                        <div id="imgHebergements4" class="formatImgHebergements"></div>
-                        <div class="cubeDetailsHebergements">
+                <div id="block2__hebergements" class="top-block__hebergements">
+                    <div class="block__label-hebergements">
+                        <div id="imgHebergements4" class="element-ImgHebergements"></div>
+                        <div class="element-labelHebergements">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46€</p>
                             <div>
@@ -246,9 +239,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cubeHebergements">
-                        <div id="imgHebergements5" class="formatImgHebergements"></div>
-                        <div class="cubeDetailsHebergements">
+                    <div class="block__label-hebergements">
+                        <div id="imgHebergements5" class="element-ImgHebergements"></div>
+                        <div class="element-labelHebergements">
                             <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de 52€</p>
                             <div>
@@ -260,9 +253,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cubeHebergements">
-                        <div id="imgHebergements6" class="formatImgHebergements"></div>
-                        <div class="cubeDetailsHebergements">
+                    <div class="block__label-hebergements">
+                        <div id="imgHebergements6" class="element-ImgHebergements"></div>
+                        <div class="element-labelHebergements">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 25€</p>
                             <div>
@@ -275,76 +268,80 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
-                <p id="textePlus" class="texteGras">Afficher plus</p>
+                <div>
+                    <p id="textePlus" class="texteGras">Afficher plus</p>
+                </div>
             </div>
-        </section>
-    </section>
-
-    <!-- Format containers des Activités emblématiques de la ville -->
-    <section id="activitesBox">
-        <h2 id="titreActivitesBox">Activités à Marseille</h2>
-
-        <!-- Container des Blocs Activités -->
-        <div id="blocActivites">
-            <!-- Container du premier Bloc -->
-            <section id="blocA">
-                <div class="cubeActivites">
-                    <div id="imgActivites1" class="formatImgActivites"></div>
-                    <div class="hauteurTitre titreActivites">
-                        <h3>Vieux Port</h3>
-                    </div>
-                </div>
-                <div class="blocActivites2356">
-                    <div class="cubeActivites2356">
-                        <div id="imgActivites2" class="formatImgActivites"></div>
-                        <div class="hauteurTitre titreActivites">
-                            <h3>Fort de Pomègues</h3>
-                        </div>
-                    </div>
-                    <div class="cubeActivites2356">
-                        <div id="imgActivites3" class="formatImgActivites"></div>
-                        <div class="hauteurTitre titreActivites">
-                            <h3>Îles de Frioul</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Container du second Bloc -->
-            <section id="blocB">
-                <div class="cubeActivites">
-                    <div id="imgActivites4" class="formatImgActivites"></div>
-                    <div class="hauteurTitre titreActivites">
-                        <h3>Parc National des Calanques</h3>
-                    </div>
-                </div>
-                <div class="blocActivites2356">
-                    <div class="cubeActivites2356">
-                        <div id="imgActivites5" class="formatImgActivites"></div>
-                        <div class="hauteurTitre titreActivites">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </div>
-                    <div class="cubeActivites2356">
-                        <div id="imgActivites6" class="formatImgActivites"></div>
-                        <div class="hauteurTitre titreActivites">
-                            <h3>Parc Longchamp</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
-    </section>
 
-    <!-- Format containers footer "Plan du site et tous les elements annexes du client" -->
-    <section id="footBox" class="footContainer">
-        <footer class="blocfoot">
-            <div class="blocPropos">
-                <div class="titreFoot">
+        <!-- Format containers des Activités emblématiques de la ville -->
+        <div id="lienactivites" class="container__activites">
+            <h2 id="titreActivitesBox">Activités à Marseille</h2>
+            <div class="block-container__Activites">
+                <!-- Container des Blocs Activités -->
+                <!-- Container du premier Bloc -->
+                <div class="block__activites">
+                    <div class="block__labelActivites">
+                        <div class="element-labelActivites">
+                            <div id="imgActivites1" class="element-ImgActivites"></div>
+                            <div class="element-sizeTitreActivites">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__labelActivites2356">
+                        <div class="element-labelActivites2356">
+                            <div id="imgActivites2" class="element-ImgActivites"></div>
+                            <div class="element-sizeTitreActivites">
+                                <h3>Fort de Pomègues</h3>
+                            </div>
+                        </div>
+                        <div class="element-labelActivites2356">
+                            <div id="imgActivites3" class="element-ImgActivites"></div>
+                            <div class="element-sizeTitreActivites">
+                                <h3>Îles de Frioul</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container du second Bloc -->
+                <div class="block__activites">
+                    <div class="block__labelActivites">
+                        <div class="element-labelActivites">
+                            <div id="imgActivites4" class="element-ImgActivites"></div>
+                            <div class="element-sizeTitreActivites">
+                                <h3>Parc National des Calanques</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__labelActivites2356">
+                        <div class="element-labelActivites2356">
+                            <div id="imgActivites5" class="element-ImgActivites"></div>
+                            <div class="element-sizeTitreActivites">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </div>
+                        <div class="element-labelActivites2356">
+                            <div id="imgActivites6" class="element-ImgActivites"></div>
+                            <div class="element-sizeTitreActivites">
+                                <h3>Parc Longchamp</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="Container__down">
+        <div class="container__listFooter">
+            <div class="block__Propos">
+                <div class="block__titreFoot">
                     <h4>A propos</h4>
                 </div>
-                <div class="listFoot1">
+                <div class="block__listFoot">
                     <ul>
                         <li>Fonctionnement du site</li>
                         <li>Conditions générales de vente</li>
@@ -352,30 +349,31 @@
                     </ul>
                 </div>
             </div>
-            <div class="blocCharte">
-                <div class="titreFoot">
+            <div class="block__Charte">
+                <div class="block__titreFoot">
                     <h4>Nos hébergements</h4>
                 </div>
-                <div class="listFoot2">
+                <div class="block__listFoot">
                     <ul>
                         <li>Charte de qualité</li>
                         <li>Soumettre votre Hôtel</li>
                     </ul>
                 </div>
             </div>
-            <div class="blocAssistance">
-                <div class="titreFoot">
+            <div class="block__Assistance">
+                <div class="block__titreFoot">
                     <h4>Assistance</h4>
                 </div>
-                <div class="listFoot">
+                <div class="block__listFoot">
                     <ul>
                         <li>Centre d'aide</li>
                         <li>Nous contacter</li>
                     </ul>
                 </div>
             </div>
-        </footer>
-    </section>
+        </div>
+    </footer>
+
 </body>
 
 </html>
