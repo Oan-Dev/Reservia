@@ -102,6 +102,8 @@ les différentes @media Tablette et PC */
         /* Zone filtres */
         .block__texteAccroche {
             align-items: center;
+            justify-content: center;
+            margin-left: 50px;
         }
         .container__Recherche {
             justify-content: center;
