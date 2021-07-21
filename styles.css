@@ -456,8 +456,9 @@ nav a {
 .Block__titre-populaires {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     font-weight: bold;
+    padding: 0 8px 0 8px;
 }
 .element-iconPopulaires {
     display: flex;
